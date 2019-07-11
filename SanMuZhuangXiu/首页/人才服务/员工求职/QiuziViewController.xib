@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="QiuziViewController">
+            <connections>
+                <outlet property="erqiBtn" destination="tMi-3n-bwV" id="8q0-e4-KVG"/>
+                <outlet property="gangweiBtn" destination="KBf-bL-bIt" id="Suw-gI-IsO"/>
+                <outlet property="sectionHeaderView" destination="Vif-2g-AEE" id="PEg-Ob-2Fk"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="workTableView" destination="OzI-tj-DIO" id="QiJ-OH-ZZW"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="367" height="677"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="OzI-tj-DIO">
+                    <rect key="frame" x="0.0" y="0.0" width="367" height="612"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="zMn-Kb-LC8"/>
+                        <outlet property="delegate" destination="-1" id="keO-IW-MgC"/>
+                    </connections>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sge-kx-Rve">
+                    <rect key="frame" x="0.0" y="612" width="367" height="65"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v50-3s-Y96">
+                            <rect key="frame" x="18" y="10" width="165.5" height="45"/>
+                            <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <state key="normal" title="我的发布记录">
+                                <color key="titleColor" red="0.2470588235" green="0.68235294120000001" blue="0.91372549020000005" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="3"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="fabujiluBtnClick:" destination="-1" eventType="touchUpInside" id="DcU-gC-2me"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v3L-2t-HJz">
+                            <rect key="frame" x="183.5" y="10" width="165.5" height="45"/>
+                            <color key="backgroundColor" red="0.2470588235" green="0.68235294120000001" blue="0.91372549020000005" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <state key="normal" title="我要发布简历">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="3"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="fabujianliBtnClick:" destination="-1" eventType="touchUpInside" id="QCl-xv-UkX"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="v3L-2t-HJz" firstAttribute="width" secondItem="v50-3s-Y96" secondAttribute="width" id="0tR-0W-1uf"/>
+                        <constraint firstItem="v3L-2t-HJz" firstAttribute="leading" secondItem="v50-3s-Y96" secondAttribute="trailing" id="2eX-8z-0M8"/>
+                        <constraint firstAttribute="bottom" secondItem="v3L-2t-HJz" secondAttribute="bottom" constant="10" id="9xt-IE-dxL"/>
+                        <constraint firstAttribute="height" constant="65" id="BUx-Kr-jy8"/>
+                        <constraint firstItem="v3L-2t-HJz" firstAttribute="top" secondItem="Sge-kx-Rve" secondAttribute="top" constant="10" id="UYJ-KX-TCC"/>
+                        <constraint firstAttribute="trailing" secondItem="v3L-2t-HJz" secondAttribute="trailing" constant="18" id="VCD-4e-uW2"/>
+                        <constraint firstItem="v50-3s-Y96" firstAttribute="top" secondItem="Sge-kx-Rve" secondAttribute="top" constant="10" id="btf-Vn-Gex"/>
+                        <constraint firstItem="v50-3s-Y96" firstAttribute="leading" secondItem="Sge-kx-Rve" secondAttribute="leading" constant="18" id="cxL-kL-Le6"/>
+                        <constraint firstAttribute="bottom" secondItem="v50-3s-Y96" secondAttribute="bottom" constant="10" id="wsm-mL-lex"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Sge-kx-Rve" firstAttribute="top" secondItem="OzI-tj-DIO" secondAttribute="bottom" id="0UK-Pf-NPe"/>
+                <constraint firstAttribute="bottom" secondItem="Sge-kx-Rve" secondAttribute="bottom" id="8xb-2R-o92"/>
+                <constraint firstItem="Sge-kx-Rve" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="BJ4-if-Twx"/>
+                <constraint firstAttribute="trailing" secondItem="Sge-kx-Rve" secondAttribute="trailing" id="Hps-ZC-dJp"/>
+                <constraint firstItem="OzI-tj-DIO" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="OMq-po-W0Z"/>
+                <constraint firstAttribute="trailing" secondItem="OzI-tj-DIO" secondAttribute="trailing" id="SO1-os-Uh0"/>
+                <constraint firstItem="OzI-tj-DIO" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="s35-b5-Nvb"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="47.200000000000003" y="52.623688155922046"/>
+        </view>
+        <view contentMode="scaleToFill" id="Vif-2g-AEE">
+            <rect key="frame" x="0.0" y="0.0" width="438" height="42"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tMi-3n-bwV" customClass="ReLayoutButton">
+                    <rect key="frame" x="8" y="5" width="211" height="30"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="211" id="9UU-LV-iXy"/>
+                        <constraint firstAttribute="height" constant="30" id="hVu-Sk-yJV"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="附近" image="icon_xiala">
+                        <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layoutType">
+                            <integer key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="fujinBtnClick:" destination="-1" eventType="touchUpInside" id="NUZ-tH-VlO"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KBf-bL-bIt" customClass="ReLayoutButton">
+                    <rect key="frame" x="215" y="5" width="215" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="215" id="3oY-ff-uwX"/>
+                        <constraint firstAttribute="height" constant="30" id="5T7-Z2-h34"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="工种" image="icon_xiala">
+                        <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layoutType">
+                            <integer key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    </variation>
+                    <connections>
+                        <action selector="javaGongchengshiBtnClick:" destination="-1" eventType="touchUpInside" id="TK5-Es-LVc"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QS4-wV-Fs9">
+                    <rect key="frame" x="0.0" y="41" width="438" height="1"/>
+                    <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="9ua-8c-E3V"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="KBf-bL-bIt" firstAttribute="top" secondItem="Lbb-mb-X5P" secondAttribute="top" constant="5" id="0OE-ZF-NT1"/>
+                <constraint firstItem="Lbb-mb-X5P" firstAttribute="trailing" secondItem="KBf-bL-bIt" secondAttribute="trailing" constant="8" id="HGx-q4-feG"/>
+                <constraint firstAttribute="trailing" secondItem="QS4-wV-Fs9" secondAttribute="trailing" id="dgX-EA-667"/>
+                <constraint firstItem="QS4-wV-Fs9" firstAttribute="leading" secondItem="Vif-2g-AEE" secondAttribute="leading" id="enF-Tc-5xR"/>
+                <constraint firstAttribute="bottom" secondItem="QS4-wV-Fs9" secondAttribute="bottom" id="gAl-Qa-mWQ"/>
+                <constraint firstItem="tMi-3n-bwV" firstAttribute="top" secondItem="Lbb-mb-X5P" secondAttribute="top" constant="5" id="rUU-gA-j79"/>
+                <constraint firstItem="tMi-3n-bwV" firstAttribute="leading" secondItem="Lbb-mb-X5P" secondAttribute="leading" constant="8" id="whw-hQ-07K"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="Lbb-mb-X5P"/>
+            <point key="canvasLocation" x="46" y="-335"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_xiala" width="10" height="5"/>
+    </resources>
+</document>

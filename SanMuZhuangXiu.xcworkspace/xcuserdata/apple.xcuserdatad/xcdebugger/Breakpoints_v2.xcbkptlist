@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SanMuZhuangXiu/&#x7b2c;&#x4e09;&#x65b9;/JYBD_IDCardRecognition/Classes/Controller/JYBDBankCardVC.m"
+            timestampString = "583988303.6631711"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "-viewWillDisappear:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SanMuZhuangXiu/&#x9996;&#x9875;/&#x5de5;&#x7a0b;&#x670d;&#x52a1;/&#x5de5;&#x7a0b;&#x670d;&#x52a1;&#x6211;&#x7684;&#x53d1;&#x5e03;/ChaiChuFabuViewController.m"
+            timestampString = "584014506.955699"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "333"
+            endingLineNumber = "333"
+            landmarkName = "-uploadInfoWithImg:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SanMuZhuangXiu/&#x9996;&#x9875;/&#x5de5;&#x7a0b;&#x670d;&#x52a1;/&#x5de5;&#x7a0b;&#x670d;&#x52a1;&#x5217;&#x8868;/ChaichuFuwuViewController.m"
+            timestampString = "584014506.955759"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "347"
+            endingLineNumber = "347"
+            landmarkName = "-ChaichuFabuClicked:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SanMuZhuangXiu/&#x9996;&#x9875;/&#x4eba;&#x624d;&#x670d;&#x52a1;/&#x5de5;&#x4eba;&#x627e;&#x5de5;&#x4f5c;/FindWorkingViewController.m"
+            timestampString = "584014506.95581"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "406"
+            endingLineNumber = "406"
+            landmarkName = "-findBtnClick:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SanMuZhuangXiu/&#x9996;&#x9875;/&#x4eba;&#x624d;&#x670d;&#x52a1;/&#x5458;&#x5de5;&#x6c42;&#x804c;/&#x65b0;&#x5efa;/FabujianliViewController.m"
+            timestampString = "584014506.955856"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "430"
+            endingLineNumber = "430"
+            landmarkName = "-uploadInfoWithImg:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SanMuZhuangXiu/&#x9996;&#x9875;/&#x4eba;&#x624d;&#x670d;&#x52a1;/&#x5458;&#x5de5;&#x6c42;&#x804c;/QiuziViewController.m"
+            timestampString = "584014506.955901"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "306"
+            endingLineNumber = "306"
+            landmarkName = "-fabujiluBtnClick:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SanMuZhuangXiu/&#x6211;&#x7684;/&#x4e2a;&#x4eba;&#x4fe1;&#x606f;/MineInfoViewController.m"
+            timestampString = "584014506.9559439"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "404"
+            endingLineNumber = "404"
+            landmarkName = "-tableView:didSelectRowAtIndexPath:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SanMuZhuangXiu/&#x6211;&#x7684;/&#x4e2a;&#x4eba;&#x4fe1;&#x606f;/&#x5b9e;&#x540d;&#x8ba4;&#x8bc1;/FrontViewController.m"
+            timestampString = "584014506.95599"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "-nextBtnClicked:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SanMuZhuangXiu/&#x6211;&#x7684;/&#x4e2a;&#x4eba;&#x4fe1;&#x606f;/MineInfoViewController.m"
+            timestampString = "584014506.956032"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "407"
+            endingLineNumber = "407"
+            landmarkName = "-tableView:didSelectRowAtIndexPath:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SanMuZhuangXiu/&#x9996;&#x9875;/HomeViewController.m"
+            timestampString = "584014506.956075"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "373"
+            endingLineNumber = "373"
+            landmarkName = "-Show:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SanMuZhuangXiu/&#x9996;&#x9875;/&#x6750;&#x6599;&#x9884;&#x7b97;/&#x6750;&#x6599;&#x5206;&#x7c7b;/CaiLiaoFenLeiCell.m"
+            timestampString = "584422213.157843"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "-selectPinpai:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SanMuZhuangXiu/&#x9996;&#x9875;/&#x6750;&#x6599;&#x9884;&#x7b97;/&#x6750;&#x6599;&#x5206;&#x7c7b;/CaiLiaoFenLeiViewController.m"
+            timestampString = "584443465.264215"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "808"
+            endingLineNumber = "808"
+            landmarkName = "-alertPinpaiViewWithcellView:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SanMuZhuangXiu/&#x9996;&#x9875;/&#x6750;&#x6599;&#x9884;&#x7b97;/&#x6750;&#x6599;&#x5206;&#x7c7b;/CaiLiaoFenLeiViewController.m"
+            timestampString = "584443465.264293"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "516"
+            endingLineNumber = "516"
+            landmarkName = "-tableView:cellForRowAtIndexPath:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SanMuZhuangXiu/&#x9996;&#x9875;/&#x6750;&#x6599;&#x9884;&#x7b97;/&#x6750;&#x6599;&#x5206;&#x7c7b;/CaiLiaoFenLeiViewController.m"
+            timestampString = "584443465.2643501"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "572"
+            endingLineNumber = "572"
+            landmarkName = "-tableView:cellForRowAtIndexPath:"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__63-[CaiLiaoFenLeiViewController tableView:cellForRowAtIndexPath:]_block_invoke.395"
+                  moduleName = "SanMuZhuangXiu"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/apple/Desktop/%E4%B8%89%E6%9C%A8%E9%A1%B9%E7%9B%AE/%E4%B8%89%E6%9C%A8%E4%BA%A4%E6%8E%A5/%E6%BA%90%E7%A0%81/SanMu/SanMuZhuangXiu/SanMuZhuangXiu/%E9%A6%96%E9%A1%B5/%E6%9D%90%E6%96%99%E9%A2%84%E7%AE%97/%E6%9D%90%E6%96%99%E5%88%86%E7%B1%BB/CaiLiaoFenLeiViewController.m"
+                  timestampString = "584436165.887336"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "572"
+                  endingLineNumber = "572"
+                  offsetFromSymbolStart = "2109">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__63-[CaiLiaoFenLeiViewController tableView:cellForRowAtIndexPath:]_block_invoke_2"
+                  moduleName = "SanMuZhuangXiu"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/apple/Desktop/%E4%B8%89%E6%9C%A8%E9%A1%B9%E7%9B%AE/%E4%B8%89%E6%9C%A8%E4%BA%A4%E6%8E%A5/%E6%BA%90%E7%A0%81/SanMu/SanMuZhuangXiu/SanMuZhuangXiu/%E9%A6%96%E9%A1%B5/%E6%9D%90%E6%96%99%E9%A2%84%E7%AE%97/%E6%9D%90%E6%96%99%E5%88%86%E7%B1%BB/CaiLiaoFenLeiViewController.m"
+                  timestampString = "584436165.8886679"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "572"
+                  endingLineNumber = "572"
+                  offsetFromSymbolStart = "12">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SanMuZhuangXiu/&#x9996;&#x9875;/&#x6750;&#x6599;&#x9884;&#x7b97;/&#x6750;&#x6599;&#x5206;&#x7c7b;/CaiLiaoFenLeiViewController.m"
+            timestampString = "584443465.264396"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1450"
+            endingLineNumber = "1450"
+            landmarkName = "-selectSpecView"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[CaiLiaoFenLeiViewController selectSpecView]"
+                  moduleName = "SanMuZhuangXiu"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/apple/Desktop/%E4%B8%89%E6%9C%A8%E9%A1%B9%E7%9B%AE/%E4%B8%89%E6%9C%A8%E4%BA%A4%E6%8E%A5/%E6%BA%90%E7%A0%81/SanMu/SanMuZhuangXiu/SanMuZhuangXiu/%E9%A6%96%E9%A1%B5/%E6%9D%90%E6%96%99%E9%A2%84%E7%AE%97/%E6%9D%90%E6%96%99%E5%88%86%E7%B1%BB/CaiLiaoFenLeiViewController.m"
+                  timestampString = "584436165.8918411"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "1450"
+                  endingLineNumber = "1450"
+                  offsetFromSymbolStart = "804">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__45-[CaiLiaoFenLeiViewController selectSpecView]_block_invoke.808"
+                  moduleName = "SanMuZhuangXiu"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/apple/Desktop/%E4%B8%89%E6%9C%A8%E9%A1%B9%E7%9B%AE/%E4%B8%89%E6%9C%A8%E4%BA%A4%E6%8E%A5/%E6%BA%90%E7%A0%81/SanMu/SanMuZhuangXiu/SanMuZhuangXiu/%E9%A6%96%E9%A1%B5/%E6%9D%90%E6%96%99%E9%A2%84%E7%AE%97/%E6%9D%90%E6%96%99%E5%88%86%E7%B1%BB/CaiLiaoFenLeiViewController.m"
+                  timestampString = "584436165.893186"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "1450"
+                  endingLineNumber = "1450"
+                  offsetFromSymbolStart = "12">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

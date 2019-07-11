@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChaichuFuwuViewController">
+            <connections>
+                <outlet property="diquBtn" destination="RIS-1O-3Nw" id="OE1-wx-BNg"/>
+                <outlet property="fujinBtn" destination="z6P-MH-WgI" id="zcG-6U-nBs"/>
+                <outlet property="tableView" destination="Sm3-pX-fsj" id="19e-us-Qnd"/>
+                <outlet property="tuijianBtn" destination="9sH-mm-BAv" id="oDw-hJ-dWl"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tRw-c2-CwN">
+                    <rect key="frame" x="0.0" y="20" width="375" height="40"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9sH-mm-BAv" customClass="ReLayoutButton">
+                            <rect key="frame" x="8" y="5" width="119.5" height="30"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="jRg-VO-ax0"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <state key="normal" title="最新" image="icon_xiala">
+                                <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="selected">
+                                <color key="titleColor" red="0.2470588235" green="0.68235294120000001" blue="0.91372549020000005" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layoutType">
+                                    <integer key="value" value="2"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="tuijianBtnClicked:" destination="-1" eventType="touchUpInside" id="z0a-Xi-znm"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RIS-1O-3Nw" customClass="ReLayoutButton">
+                            <rect key="frame" x="247.5" y="5" width="119.5" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="Pd5-Nv-ByZ"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <state key="normal" title="地区" image="icon_xiala">
+                                <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="selected">
+                                <color key="titleColor" red="0.2470588235" green="0.68235294120000001" blue="0.91372549020000005" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layoutType">
+                                    <integer key="value" value="2"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <variation key="heightClass=regular-widthClass=compact">
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            </variation>
+                            <connections>
+                                <action selector="diquBtnClicked:" destination="-1" eventType="touchUpInside" id="Rxa-RR-Ckv"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z6P-MH-WgI" customClass="ReLayoutButton">
+                            <rect key="frame" x="127.5" y="5" width="120" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="wLq-RA-YM7"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <state key="normal" title="附近" image="icon_xiala">
+                                <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="selected">
+                                <color key="titleColor" red="0.2470588235" green="0.68235294120000001" blue="0.91372549020000005" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layoutType">
+                                    <integer key="value" value="2"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <variation key="heightClass=regular-widthClass=compact">
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            </variation>
+                            <connections>
+                                <action selector="fujinBtnClicked:" destination="-1" eventType="touchUpInside" id="JNT-Gc-YcH"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uDP-8L-02X">
+                            <rect key="frame" x="0.0" y="39" width="375" height="1"/>
+                            <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="2Eg-nl-FJl"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="9sH-mm-BAv" firstAttribute="centerY" secondItem="tRw-c2-CwN" secondAttribute="centerY" id="0SB-ig-JhC"/>
+                        <constraint firstItem="z6P-MH-WgI" firstAttribute="centerY" secondItem="9sH-mm-BAv" secondAttribute="centerY" id="0pg-S3-RCj"/>
+                        <constraint firstItem="uDP-8L-02X" firstAttribute="leading" secondItem="tRw-c2-CwN" secondAttribute="leading" id="3zr-75-JJQ"/>
+                        <constraint firstItem="sy3-tf-laO" firstAttribute="trailing" secondItem="RIS-1O-3Nw" secondAttribute="trailing" constant="8" id="47b-gM-gk6"/>
+                        <constraint firstItem="z6P-MH-WgI" firstAttribute="width" secondItem="9sH-mm-BAv" secondAttribute="width" id="9ac-B0-D06"/>
+                        <constraint firstAttribute="trailing" secondItem="uDP-8L-02X" secondAttribute="trailing" id="Sxz-Sg-1Gk"/>
+                        <constraint firstItem="z6P-MH-WgI" firstAttribute="leading" secondItem="9sH-mm-BAv" secondAttribute="trailing" id="TzR-14-hH5"/>
+                        <constraint firstAttribute="bottom" secondItem="uDP-8L-02X" secondAttribute="bottom" id="hGc-uX-DIZ"/>
+                        <constraint firstItem="RIS-1O-3Nw" firstAttribute="leading" secondItem="z6P-MH-WgI" secondAttribute="trailing" id="iaw-HW-MST"/>
+                        <constraint firstItem="RIS-1O-3Nw" firstAttribute="centerY" secondItem="9sH-mm-BAv" secondAttribute="centerY" id="kjd-bB-ZPP"/>
+                        <constraint firstItem="9sH-mm-BAv" firstAttribute="leading" secondItem="sy3-tf-laO" secondAttribute="leading" constant="8" id="sqH-CY-1ys"/>
+                        <constraint firstItem="RIS-1O-3Nw" firstAttribute="width" secondItem="9sH-mm-BAv" secondAttribute="width" id="wvl-xo-BU3"/>
+                        <constraint firstAttribute="height" constant="40" id="zDr-pC-9Jk"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="sy3-tf-laO"/>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Sm3-pX-fsj">
+                    <rect key="frame" x="0.0" y="60" width="375" height="542"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="acv-kY-afd"/>
+                        <outlet property="delegate" destination="-1" id="7VC-4D-772"/>
+                    </connections>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l9N-Vp-kly">
+                    <rect key="frame" x="0.0" y="602" width="375" height="65"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VVD-r3-E1V">
+                            <rect key="frame" x="18" y="10" width="170" height="45"/>
+                            <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="170" id="5bb-Or-yFb"/>
+                                <constraint firstAttribute="height" constant="45" id="ycJ-6f-2el"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <state key="normal" title="我的发布记录">
+                                <color key="titleColor" red="0.2470588235" green="0.68235294120000001" blue="0.91372549020000005" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="3"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="myFabuJiluClicked:" destination="-1" eventType="touchUpInside" id="NfB-d9-s1k"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qRf-em-Pf6">
+                            <rect key="frame" x="188" y="10" width="171" height="45"/>
+                            <color key="backgroundColor" red="0.2470588235" green="0.68235294120000001" blue="0.91372549020000005" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="wdg-0C-nFR"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <state key="normal" title="我要发布服务">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="3"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="ChaichuFabuClicked:" destination="-1" eventType="touchUpInside" id="Hht-dO-YMd"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="qRf-em-Pf6" secondAttribute="trailing" constant="16" id="4u5-Hf-xNv"/>
+                        <constraint firstItem="qRf-em-Pf6" firstAttribute="leading" secondItem="VVD-r3-E1V" secondAttribute="trailing" id="Akw-p7-6nv"/>
+                        <constraint firstItem="VVD-r3-E1V" firstAttribute="leading" secondItem="l9N-Vp-kly" secondAttribute="leading" constant="18" id="FlZ-fV-tPE"/>
+                        <constraint firstItem="qRf-em-Pf6" firstAttribute="top" secondItem="l9N-Vp-kly" secondAttribute="top" constant="10" id="X8R-EO-xAK"/>
+                        <constraint firstAttribute="height" constant="65" id="cp7-0x-8zw"/>
+                        <constraint firstItem="VVD-r3-E1V" firstAttribute="top" secondItem="l9N-Vp-kly" secondAttribute="top" constant="10" id="ol7-hH-M48"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Sm3-pX-fsj" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="7Uv-iA-ger"/>
+                <constraint firstItem="tRw-c2-CwN" firstAttribute="trailing" secondItem="Q5M-cg-NOt" secondAttribute="trailing" id="BGY-bv-qgf"/>
+                <constraint firstItem="tRw-c2-CwN" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="Ii5-Ix-ZCs"/>
+                <constraint firstItem="Sm3-pX-fsj" firstAttribute="top" secondItem="tRw-c2-CwN" secondAttribute="bottom" id="JPS-to-lKn"/>
+                <constraint firstItem="l9N-Vp-kly" firstAttribute="trailing" secondItem="Q5M-cg-NOt" secondAttribute="trailing" id="OLR-VC-51r"/>
+                <constraint firstItem="l9N-Vp-kly" firstAttribute="top" secondItem="Sm3-pX-fsj" secondAttribute="bottom" id="WUd-rC-IOf"/>
+                <constraint firstItem="l9N-Vp-kly" firstAttribute="bottom" secondItem="Q5M-cg-NOt" secondAttribute="bottom" id="ciy-Hv-2Ec"/>
+                <constraint firstItem="Sm3-pX-fsj" firstAttribute="trailing" secondItem="Q5M-cg-NOt" secondAttribute="trailing" id="t3a-rE-ebm"/>
+                <constraint firstItem="tRw-c2-CwN" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" id="vFq-XS-uvE"/>
+                <constraint firstItem="l9N-Vp-kly" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="wJX-O0-Dhb"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="138.40000000000001" y="109.29535232383809"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_xiala" width="10" height="5"/>
+    </resources>
+</document>
