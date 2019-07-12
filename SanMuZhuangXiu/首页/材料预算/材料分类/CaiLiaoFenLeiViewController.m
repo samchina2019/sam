@@ -416,11 +416,20 @@ static NSString *imgCellId = @"imgCellId";
     if (tableView == self.classTableView) {
         static NSString *cellIdentifier = @"classCell";
         UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+        cell.backgroundColor=[MTool colorWithHexString:@"#f9f9f9"];
+
         if (cell == nil) {
             cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
+            cell.backgroundColor=[MTool colorWithHexString:@"#f9f9f9"];
+
+
         }
+        cell.selectedBackgroundView = [[UIView alloc] initWithFrame:cell.frame];
+        cell.selectedBackgroundView.backgroundColor = [MTool colorWithHexString:@"#2e8cff"];
+       
         if (self.selectIndex == indexPath.row) {
-            cell.textLabel.textColor = UIColorFromRGB(0x333333);
+//            cell.textLabel.textColor = UIColorFromRGB(0x333333);
+             cell.textLabel.textColor = [UIColor whiteColor];
             cell.textLabel.font = [UIFont systemFontOfSize:14 weight:UIFontWeightBold];
             [tableView selectRowAtIndexPath:indexPath animated:NO scrollPosition:UITableViewScrollPositionNone];
 
@@ -500,7 +509,7 @@ static NSString *imgCellId = @"imgCellId";
                     cell.pinpaiTF.text = model.selectBrandDict[@"name"];
                 }
                 if ([[model.selectsSpecDict allKeys] count] != 0) {
-                    cell.addBtn.hidden = YES;
+                    cell.addBtn.hidden = NO;
                     cell.yixuanBtn.hidden = NO;
                     //                    cell.jiajianBtn.currentNumber = model.number;
                 }
@@ -620,7 +629,8 @@ static NSString *imgCellId = @"imgCellId";
                 selectCell.textLabel.textColor = UIColorFromRGB(0x666666);
                 selectCell.textLabel.font = [UIFont systemFontOfSize:14 weight:UIFontWeightRegular];
                 UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
-                cell.textLabel.textColor = UIColorFromRGB(0x333333);
+//                cell.textLabel.textColor = UIColorFromRGB(0x333333);
+                 cell.textLabel.textColor = [UIColor whiteColor];
                 cell.textLabel.font = [UIFont systemFontOfSize:14 weight:UIFontWeightBold];
                 self.selectIndex = indexPath.row;
 
