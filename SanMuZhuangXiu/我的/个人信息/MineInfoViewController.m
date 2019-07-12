@@ -9,7 +9,7 @@
 #import "MineInfoViewController.h"
 #import "MineInfoIconCell.h"
 
-#import "JYBDIDCardVC.h"
+//#import "JYBDIDCardVC.h"
 #import "FrontViewController.h"
 #import "ReverseViewController.h"
 #import "AddressManagerViewController.h"
@@ -401,21 +401,21 @@
     }
             break;
     case 6: {
-        JYBDIDCardVC *AVCaptureVC = [[JYBDIDCardVC alloc] init];
-
-        AVCaptureVC.finish = ^(JYBDCardIDInfo *info, UIImage *image) {
-            if (info.name == nil || info.num == nil) {
-                [[DZTools topViewController].navigationController popViewControllerAnimated:YES];
-                [DZTools showText:@"请拍摄头像面" delay:2];
-            } else {
-                FrontViewController *viewController = [[FrontViewController alloc] init];
-                viewController.IDInfo = info;
-                [DZTools topViewController].hidesBottomBarWhenPushed = YES;
-                [[DZTools topViewController].navigationController pushViewController:viewController animated:YES];
-            }
-        };
-        self.hidesBottomBarWhenPushed = YES;
-        [self.navigationController pushViewController:AVCaptureVC animated:YES];
+//        JYBDIDCardVC *AVCaptureVC = [[JYBDIDCardVC alloc] init];
+//
+//        AVCaptureVC.finish = ^(JYBDCardIDInfo *info, UIImage *image) {
+//            if (info.name == nil || info.num == nil) {
+//                [[DZTools topViewController].navigationController popViewControllerAnimated:YES];
+//                [DZTools showText:@"请拍摄头像面" delay:2];
+//            } else {
+//                FrontViewController *viewController = [[FrontViewController alloc] init];
+//                viewController.IDInfo = info;
+//                [DZTools topViewController].hidesBottomBarWhenPushed = YES;
+//                [[DZTools topViewController].navigationController pushViewController:viewController animated:YES];
+//            }
+//        };
+//        self.hidesBottomBarWhenPushed = YES;
+//        [self.navigationController pushViewController:AVCaptureVC animated:YES];
     }
             break;
     case 7: {

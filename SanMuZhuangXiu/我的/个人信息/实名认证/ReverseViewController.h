@@ -7,14 +7,14 @@
 //
 
 #import "DZBaseViewController.h"
-#import "JYBDCardIDInfo.h"
+//#import "JYBDCardIDInfo.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface ReverseViewController : DZBaseViewController
 
 // 身份证信息
-@property (nonatomic,strong) JYBDCardIDInfo *IDInfo;
+//@property (nonatomic,strong) JYBDCardIDInfo *IDInfo;
 
 @end
 

@@ -7,7 +7,7 @@
 //
 
 #import "FrontViewController.h"
-#import "JYBDIDCardVC.h"
+//#import "JYBDIDCardVC.h"
 #import "ReverseViewController.h"
 
 @interface FrontViewController ()
@@ -30,27 +30,27 @@
     self.resetBtn.layer.borderWidth = 1;
     self.resetBtn.layer.borderColor = UIColorFromRGB(0x3FAEE9).CGColor;
     
-    self.nameLabel.text = self.IDInfo.name;
-    self.sexLabel.text = self.IDInfo.gender;
-    self.idCardNumLabel.text = self.IDInfo.num;
+//    self.nameLabel.text = self.IDInfo.name;
+//    self.sexLabel.text = self.IDInfo.gender;
+//    self.idCardNumLabel.text = self.IDInfo.num;
 }
 #pragma mark - XibFunction
 
 - (IBAction)nextBtnClicked:(id)sender {
-    JYBDIDCardVC *AVCaptureVC = [[JYBDIDCardVC alloc] init];
-    AVCaptureVC.finish = ^(JYBDCardIDInfo *info, UIImage *image)
-    {
-        if (info.name != nil || info.num != nil) {
-            [DZTools showText:@"请拍摄国徽面" delay:2];
-        }else{
-            self.IDInfo.valid = info.valid;
-            ReverseViewController *viewController = [[ReverseViewController alloc]init];
-            viewController.IDInfo = self.IDInfo;
-            [DZTools topViewController].hidesBottomBarWhenPushed = YES;
-            [[DZTools topViewController].navigationController pushViewController:viewController animated:YES];
-        }
-    };
-    [self.navigationController pushViewController:AVCaptureVC animated:YES];
+//    JYBDIDCardVC *AVCaptureVC = [[JYBDIDCardVC alloc] init];
+//    AVCaptureVC.finish = ^(JYBDCardIDInfo *info, UIImage *image)
+//    {
+//        if (info.name != nil || info.num != nil) {
+//            [DZTools showText:@"请拍摄国徽面" delay:2];
+//        }else{
+//            self.IDInfo.valid = info.valid;
+//            ReverseViewController *viewController = [[ReverseViewController alloc]init];
+//            viewController.IDInfo = self.IDInfo;
+//            [DZTools topViewController].hidesBottomBarWhenPushed = YES;
+//            [[DZTools topViewController].navigationController pushViewController:viewController animated:YES];
+//        }
+//    };
+//    [self.navigationController pushViewController:AVCaptureVC animated:YES];
 }
 - (IBAction)resetBtnClicked:(id)sender {
     

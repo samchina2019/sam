@@ -15,7 +15,7 @@
 #import "YBPopupMenu.h"
 #import "UIButton+Code.h"
 
-#import "JYBDIDCardVC.h"
+//#import "JYBDIDCardVC.h"
 #import "FrontViewController.h"
 #import "TZImagePickerController.h"
 #define Kwidth [UIScreen mainScreen].bounds.size.width
@@ -325,21 +325,21 @@ IsNeedHub:NO];
                                       style:UIAlertActionStyleDefault
                                       handler:^(UIAlertAction *_Nonnull action) {
                       //实名认证
-                      JYBDIDCardVC *AVCaptureVC = [[JYBDIDCardVC alloc] init];
-                              
-                      AVCaptureVC.finish = ^(JYBDCardIDInfo *info, UIImage *image) {
-                          if (info.name == nil || info.num == nil) {
-                              [[DZTools topViewController].navigationController popViewControllerAnimated:YES];
-                              [DZTools showText:@"请拍摄头像面" delay:2];
-                          } else {
-                              FrontViewController *viewController = [[FrontViewController alloc] init];
-                              viewController.IDInfo = info;
-                              [DZTools topViewController].hidesBottomBarWhenPushed = YES;
-                              [[DZTools topViewController].navigationController pushViewController:viewController animated:YES];
-                          }
-                      };
-                      self.hidesBottomBarWhenPushed = YES;
-                      [self.navigationController pushViewController:AVCaptureVC animated:YES];
+//                      JYBDIDCardVC *AVCaptureVC = [[JYBDIDCardVC alloc] init];
+//
+//                      AVCaptureVC.finish = ^(JYBDCardIDInfo *info, UIImage *image) {
+//                          if (info.name == nil || info.num == nil) {
+//                              [[DZTools topViewController].navigationController popViewControllerAnimated:YES];
+//                              [DZTools showText:@"请拍摄头像面" delay:2];
+//                          } else {
+//                              FrontViewController *viewController = [[FrontViewController alloc] init];
+//                              viewController.IDInfo = info;
+//                              [DZTools topViewController].hidesBottomBarWhenPushed = YES;
+//                              [[DZTools topViewController].navigationController pushViewController:viewController animated:YES];
+//                          }
+//                      };
+//                      self.hidesBottomBarWhenPushed = YES;
+//                      [self.navigationController pushViewController:AVCaptureVC animated:YES];
                           }]];
                     [alert addAction:[UIAlertAction
                                       actionWithTitle:@"否"

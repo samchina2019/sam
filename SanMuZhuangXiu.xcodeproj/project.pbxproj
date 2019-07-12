@@ -277,32 +277,6 @@
 		E199FD2121D4B0700036CA46 /* MyOrderListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E199FD1F21D4B0700036CA46 /* MyOrderListViewController.xib */; };
 		E199FD2521D4B0960036CA46 /* MyOrderListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E199FD2321D4B0960036CA46 /* MyOrderListCell.m */; };
 		E199FD2621D4B0960036CA46 /* MyOrderListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E199FD2421D4B0960036CA46 /* MyOrderListCell.xib */; };
-		E1AFC3F821D6059B007F26B2 /* UIImage+IDCardExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = E1AFC3C421D6059B007F26B2 /* UIImage+IDCardExtend.m */; };
-		E1AFC3F921D6059B007F26B2 /* UIAlertController+IDCardExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = E1AFC3C521D6059B007F26B2 /* UIAlertController+IDCardExtend.m */; };
-		E1AFC3FA21D6059B007F26B2 /* JYBDScanCardBaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E1AFC3C921D6059B007F26B2 /* JYBDScanCardBaseVC.m */; };
-		E1AFC3FB21D6059B007F26B2 /* JYBDIDCardVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E1AFC3CB21D6059B007F26B2 /* JYBDIDCardVC.m */; };
-		E1AFC3FC21D6059B007F26B2 /* JYBDBankCardVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E1AFC3CC21D6059B007F26B2 /* JYBDBankCardVC.m */; };
-		E1AFC3FD21D6059B007F26B2 /* JYBDScanCardManage.m in Sources */ = {isa = PBXBuildFile; fileRef = E1AFC3D021D6059B007F26B2 /* JYBDScanCardManage.m */; };
-		E1AFC3FE21D6059B007F26B2 /* JYBDBankCardSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = E1AFC3D121D6059B007F26B2 /* JYBDBankCardSearch.m */; };
-		E1AFC3FF21D6059B007F26B2 /* JYBDScanCardManageBase.m in Sources */ = {isa = PBXBuildFile; fileRef = E1AFC3D221D6059B007F26B2 /* JYBDScanCardManageBase.m */; };
-		E1AFC40021D6059B007F26B2 /* JYBDBankCardInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = E1AFC3DC21D6059B007F26B2 /* JYBDBankCardInfo.m */; };
-		E1AFC40121D6059B007F26B2 /* JYBDCardIDInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = E1AFC3DD21D6059B007F26B2 /* JYBDCardIDInfo.m */; };
-		E1AFC40221D6059B007F26B2 /* JYBDNewFormeScaningV.m in Sources */ = {isa = PBXBuildFile; fileRef = E1AFC3E121D6059B007F26B2 /* JYBDNewFormeScaningV.m */; };
-		E1AFC40421D6059B007F26B2 /* libexbankcardios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E1AFC3E521D6059B007F26B2 /* libexbankcardios.a */; };
-		E1AFC40521D6059B007F26B2 /* libbexbankcard.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E1AFC3E621D6059B007F26B2 /* libbexbankcard.a */; };
-		E1AFC40621D6059B007F26B2 /* IDCardRectManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E1AFC3E821D6059B007F26B2 /* IDCardRectManager.m */; };
-		E1AFC40721D6059B007F26B2 /* zocr0.lib in Resources */ = {isa = PBXBuildFile; fileRef = E1AFC3EB21D6059B007F26B2 /* zocr0.lib */; };
-		E1AFC40821D6059B007F26B2 /* scaningline@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E1AFC3ED21D6059B007F26B2 /* scaningline@2x.png */; };
-		E1AFC40921D6059B007F26B2 /* scaningline@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E1AFC3EE21D6059B007F26B2 /* scaningline@3x.png */; };
-		E1AFC40A21D6059B007F26B2 /* idcard_back.png in Resources */ = {isa = PBXBuildFile; fileRef = E1AFC3EF21D6059B007F26B2 /* idcard_back.png */; };
-		E1AFC40B21D6059B007F26B2 /* flashlightscan@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E1AFC3F021D6059B007F26B2 /* flashlightscan@3x.png */; };
-		E1AFC40C21D6059B007F26B2 /* flashlightscan@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E1AFC3F121D6059B007F26B2 /* flashlightscan@2x.png */; };
-		E1AFC40D21D6059B007F26B2 /* flashlightscan.png in Resources */ = {isa = PBXBuildFile; fileRef = E1AFC3F221D6059B007F26B2 /* flashlightscan.png */; };
-		E1AFC40E21D6059B007F26B2 /* scaningbgimage.png in Resources */ = {isa = PBXBuildFile; fileRef = E1AFC3F321D6059B007F26B2 /* scaningbgimage.png */; };
-		E1AFC40F21D6059B007F26B2 /* scaningbgimage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E1AFC3F421D6059B007F26B2 /* scaningbgimage@2x.png */; };
-		E1AFC41021D6059B007F26B2 /* scaningbgimage@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E1AFC3F521D6059B007F26B2 /* scaningbgimage@3x.png */; };
-		E1AFC41121D6059B007F26B2 /* scaningline.png in Resources */ = {isa = PBXBuildFile; fileRef = E1AFC3F621D6059B007F26B2 /* scaningline.png */; };
-		E1AFC41221D6059B007F26B2 /* JYBD_IDCardRecognition.podspec in Resources */ = {isa = PBXBuildFile; fileRef = E1AFC3F721D6059B007F26B2 /* JYBD_IDCardRecognition.podspec */; };
 		E1B7481622276E620062C1B9 /* MemberGradeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1B7481422276E620062C1B9 /* MemberGradeViewController.m */; };
 		E1B7481722276E620062C1B9 /* MemberGradeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1B7481522276E620062C1B9 /* MemberGradeViewController.xib */; };
 		E1B7481B2227B7410062C1B9 /* SoundReminderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E1B748192227B7410062C1B9 /* SoundReminderCell.m */; };
@@ -1128,50 +1102,6 @@
 		E199FD2221D4B0960036CA46 /* MyOrderListCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyOrderListCell.h; sourceTree = "<group>"; };
 		E199FD2321D4B0960036CA46 /* MyOrderListCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyOrderListCell.m; sourceTree = "<group>"; };
 		E199FD2421D4B0960036CA46 /* MyOrderListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyOrderListCell.xib; sourceTree = "<group>"; };
-		E1AFC3C321D6059B007F26B2 /* UIAlertController+IDCardExtend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertController+IDCardExtend.h"; sourceTree = "<group>"; };
-		E1AFC3C421D6059B007F26B2 /* UIImage+IDCardExtend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+IDCardExtend.m"; sourceTree = "<group>"; };
-		E1AFC3C521D6059B007F26B2 /* UIAlertController+IDCardExtend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+IDCardExtend.m"; sourceTree = "<group>"; };
-		E1AFC3C621D6059B007F26B2 /* UIImage+IDCardExtend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+IDCardExtend.h"; sourceTree = "<group>"; };
-		E1AFC3C821D6059B007F26B2 /* JYBDIDCardVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYBDIDCardVC.h; sourceTree = "<group>"; };
-		E1AFC3C921D6059B007F26B2 /* JYBDScanCardBaseVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYBDScanCardBaseVC.m; sourceTree = "<group>"; };
-		E1AFC3CA21D6059B007F26B2 /* JYBDBankCardVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYBDBankCardVC.h; sourceTree = "<group>"; };
-		E1AFC3CB21D6059B007F26B2 /* JYBDIDCardVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYBDIDCardVC.m; sourceTree = "<group>"; };
-		E1AFC3CC21D6059B007F26B2 /* JYBDBankCardVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYBDBankCardVC.m; sourceTree = "<group>"; };
-		E1AFC3CD21D6059B007F26B2 /* JYBDScanCardBaseVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYBDScanCardBaseVC.h; sourceTree = "<group>"; };
-		E1AFC3CF21D6059B007F26B2 /* JYBDScanCardManageBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYBDScanCardManageBase.h; sourceTree = "<group>"; };
-		E1AFC3D021D6059B007F26B2 /* JYBDScanCardManage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYBDScanCardManage.m; sourceTree = "<group>"; };
-		E1AFC3D121D6059B007F26B2 /* JYBDBankCardSearch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYBDBankCardSearch.m; sourceTree = "<group>"; };
-		E1AFC3D221D6059B007F26B2 /* JYBDScanCardManageBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYBDScanCardManageBase.m; sourceTree = "<group>"; };
-		E1AFC3D321D6059B007F26B2 /* JYBDBankCardSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYBDBankCardSearch.h; sourceTree = "<group>"; };
-		E1AFC3D421D6059B007F26B2 /* JYBDScanCardManage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYBDScanCardManage.h; sourceTree = "<group>"; };
-		E1AFC3D621D6059B007F26B2 /* exbankcardcore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = exbankcardcore.h; sourceTree = "<group>"; };
-		E1AFC3D721D6059B007F26B2 /* commondef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = commondef.h; sourceTree = "<group>"; };
-		E1AFC3D821D6059B007F26B2 /* exbankcard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = exbankcard.h; sourceTree = "<group>"; };
-		E1AFC3D921D6059B007F26B2 /* excards.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = excards.h; sourceTree = "<group>"; };
-		E1AFC3DA21D6059B007F26B2 /* BankCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BankCard.h; sourceTree = "<group>"; };
-		E1AFC3DC21D6059B007F26B2 /* JYBDBankCardInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYBDBankCardInfo.m; sourceTree = "<group>"; };
-		E1AFC3DD21D6059B007F26B2 /* JYBDCardIDInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYBDCardIDInfo.m; sourceTree = "<group>"; };
-		E1AFC3DE21D6059B007F26B2 /* JYBDBankCardInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYBDBankCardInfo.h; sourceTree = "<group>"; };
-		E1AFC3DF21D6059B007F26B2 /* JYBDCardIDInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYBDCardIDInfo.h; sourceTree = "<group>"; };
-		E1AFC3E121D6059B007F26B2 /* JYBDNewFormeScaningV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYBDNewFormeScaningV.m; sourceTree = "<group>"; };
-		E1AFC3E221D6059B007F26B2 /* JYBDNewFormeScaningV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYBDNewFormeScaningV.h; sourceTree = "<group>"; };
-		E1AFC3E421D6059B007F26B2 /* libexidcardios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libexidcardios.a; sourceTree = "<group>"; };
-		E1AFC3E521D6059B007F26B2 /* libexbankcardios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libexbankcardios.a; sourceTree = "<group>"; };
-		E1AFC3E621D6059B007F26B2 /* libbexbankcard.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libbexbankcard.a; sourceTree = "<group>"; };
-		E1AFC3E821D6059B007F26B2 /* IDCardRectManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDCardRectManager.m; sourceTree = "<group>"; };
-		E1AFC3E921D6059B007F26B2 /* IDCardRectManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDCardRectManager.h; sourceTree = "<group>"; };
-		E1AFC3EB21D6059B007F26B2 /* zocr0.lib */ = {isa = PBXFileReference; lastKnownFileType = file; path = zocr0.lib; sourceTree = "<group>"; };
-		E1AFC3ED21D6059B007F26B2 /* scaningline@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "scaningline@2x.png"; sourceTree = "<group>"; };
-		E1AFC3EE21D6059B007F26B2 /* scaningline@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "scaningline@3x.png"; sourceTree = "<group>"; };
-		E1AFC3EF21D6059B007F26B2 /* idcard_back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = idcard_back.png; sourceTree = "<group>"; };
-		E1AFC3F021D6059B007F26B2 /* flashlightscan@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "flashlightscan@3x.png"; sourceTree = "<group>"; };
-		E1AFC3F121D6059B007F26B2 /* flashlightscan@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "flashlightscan@2x.png"; sourceTree = "<group>"; };
-		E1AFC3F221D6059B007F26B2 /* flashlightscan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flashlightscan.png; sourceTree = "<group>"; };
-		E1AFC3F321D6059B007F26B2 /* scaningbgimage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scaningbgimage.png; sourceTree = "<group>"; };
-		E1AFC3F421D6059B007F26B2 /* scaningbgimage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "scaningbgimage@2x.png"; sourceTree = "<group>"; };
-		E1AFC3F521D6059B007F26B2 /* scaningbgimage@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "scaningbgimage@3x.png"; sourceTree = "<group>"; };
-		E1AFC3F621D6059B007F26B2 /* scaningline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scaningline.png; sourceTree = "<group>"; };
-		E1AFC3F721D6059B007F26B2 /* JYBD_IDCardRecognition.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = JYBD_IDCardRecognition.podspec; sourceTree = "<group>"; };
 		E1B7481322276E620062C1B9 /* MemberGradeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MemberGradeViewController.h; sourceTree = "<group>"; };
 		E1B7481422276E620062C1B9 /* MemberGradeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MemberGradeViewController.m; sourceTree = "<group>"; };
 		E1B7481522276E620062C1B9 /* MemberGradeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MemberGradeViewController.xib; sourceTree = "<group>"; };
@@ -1918,9 +1848,7 @@
 				E1133E0D222CB885006072E2 /* AssetsLibrary.framework in Frameworks */,
 				E1133E0B222CB85F006072E2 /* UserNotifications.framework in Frameworks */,
 				EECA9D4022560B1E005A3ED3 /* libWeChatSDK.a in Frameworks */,
-				E1AFC40421D6059B007F26B2 /* libexbankcardios.a in Frameworks */,
 				F56CEFC76B0334525A1BDDA4 /* libPods-SanMuZhuangXiu.a in Frameworks */,
-				E1AFC40521D6059B007F26B2 /* libbexbankcard.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2458,7 +2386,6 @@
 				EEBC147B223A48D0000F4C2D /* TZImagePickerController */,
 				E1EA8EFE21E07D6A0029D01B /* PPNumberButton */,
 				E12B523A21D86B6B0082B9A1 /* HYBStarEvaluationView */,
-				E1AFC3C021D6059B007F26B2 /* JYBD_IDCardRecognition */,
 				E11B291121D1D64C00F37E0E /* 分段控制器 */,
 				E13C854C21C8C137001ADBA0 /* JHNoDataEmptyView */,
 			);
@@ -2967,145 +2894,6 @@
 				6F6ABEC1225C75FF00A994CC /* 验收 */,
 			);
 			path = "我的订单";
-			sourceTree = "<group>";
-		};
-		E1AFC3C021D6059B007F26B2 /* JYBD_IDCardRecognition */ = {
-			isa = PBXGroup;
-			children = (
-				E1AFC3C121D6059B007F26B2 /* Classes */,
-				E1AFC3EA21D6059B007F26B2 /* dicts */,
-				E1AFC3EC21D6059B007F26B2 /* Resources */,
-				E1AFC3F721D6059B007F26B2 /* JYBD_IDCardRecognition.podspec */,
-			);
-			path = JYBD_IDCardRecognition;
-			sourceTree = "<group>";
-		};
-		E1AFC3C121D6059B007F26B2 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				E1AFC3C221D6059B007F26B2 /* Category */,
-				E1AFC3C721D6059B007F26B2 /* Controller */,
-				E1AFC3CE21D6059B007F26B2 /* JYBD_OCR_Bank */,
-				E1AFC3D521D6059B007F26B2 /* libexidcard */,
-				E1AFC3DB21D6059B007F26B2 /* Model */,
-				E1AFC3E021D6059B007F26B2 /* View */,
-				E1AFC3E321D6059B007F26B2 /* exbankcardcore */,
-				E1AFC3E721D6059B007F26B2 /* Tool */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		E1AFC3C221D6059B007F26B2 /* Category */ = {
-			isa = PBXGroup;
-			children = (
-				E1AFC3C321D6059B007F26B2 /* UIAlertController+IDCardExtend.h */,
-				E1AFC3C421D6059B007F26B2 /* UIImage+IDCardExtend.m */,
-				E1AFC3C521D6059B007F26B2 /* UIAlertController+IDCardExtend.m */,
-				E1AFC3C621D6059B007F26B2 /* UIImage+IDCardExtend.h */,
-			);
-			path = Category;
-			sourceTree = "<group>";
-		};
-		E1AFC3C721D6059B007F26B2 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				E1AFC3C821D6059B007F26B2 /* JYBDIDCardVC.h */,
-				E1AFC3CB21D6059B007F26B2 /* JYBDIDCardVC.m */,
-				E1AFC3CD21D6059B007F26B2 /* JYBDScanCardBaseVC.h */,
-				E1AFC3C921D6059B007F26B2 /* JYBDScanCardBaseVC.m */,
-				E1AFC3CA21D6059B007F26B2 /* JYBDBankCardVC.h */,
-				E1AFC3CC21D6059B007F26B2 /* JYBDBankCardVC.m */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		E1AFC3CE21D6059B007F26B2 /* JYBD_OCR_Bank */ = {
-			isa = PBXGroup;
-			children = (
-				E1AFC3CF21D6059B007F26B2 /* JYBDScanCardManageBase.h */,
-				E1AFC3D021D6059B007F26B2 /* JYBDScanCardManage.m */,
-				E1AFC3D121D6059B007F26B2 /* JYBDBankCardSearch.m */,
-				E1AFC3D221D6059B007F26B2 /* JYBDScanCardManageBase.m */,
-				E1AFC3D321D6059B007F26B2 /* JYBDBankCardSearch.h */,
-				E1AFC3D421D6059B007F26B2 /* JYBDScanCardManage.h */,
-			);
-			path = JYBD_OCR_Bank;
-			sourceTree = "<group>";
-		};
-		E1AFC3D521D6059B007F26B2 /* libexidcard */ = {
-			isa = PBXGroup;
-			children = (
-				E1AFC3D621D6059B007F26B2 /* exbankcardcore.h */,
-				E1AFC3D721D6059B007F26B2 /* commondef.h */,
-				E1AFC3D821D6059B007F26B2 /* exbankcard.h */,
-				E1AFC3D921D6059B007F26B2 /* excards.h */,
-				E1AFC3DA21D6059B007F26B2 /* BankCard.h */,
-			);
-			path = libexidcard;
-			sourceTree = "<group>";
-		};
-		E1AFC3DB21D6059B007F26B2 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				E1AFC3DC21D6059B007F26B2 /* JYBDBankCardInfo.m */,
-				E1AFC3DD21D6059B007F26B2 /* JYBDCardIDInfo.m */,
-				E1AFC3DE21D6059B007F26B2 /* JYBDBankCardInfo.h */,
-				E1AFC3DF21D6059B007F26B2 /* JYBDCardIDInfo.h */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		E1AFC3E021D6059B007F26B2 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				E1AFC3E121D6059B007F26B2 /* JYBDNewFormeScaningV.m */,
-				E1AFC3E221D6059B007F26B2 /* JYBDNewFormeScaningV.h */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		E1AFC3E321D6059B007F26B2 /* exbankcardcore */ = {
-			isa = PBXGroup;
-			children = (
-				E1AFC3E421D6059B007F26B2 /* libexidcardios.a */,
-				E1AFC3E521D6059B007F26B2 /* libexbankcardios.a */,
-				E1AFC3E621D6059B007F26B2 /* libbexbankcard.a */,
-			);
-			path = exbankcardcore;
-			sourceTree = "<group>";
-		};
-		E1AFC3E721D6059B007F26B2 /* Tool */ = {
-			isa = PBXGroup;
-			children = (
-				E1AFC3E821D6059B007F26B2 /* IDCardRectManager.m */,
-				E1AFC3E921D6059B007F26B2 /* IDCardRectManager.h */,
-			);
-			path = Tool;
-			sourceTree = "<group>";
-		};
-		E1AFC3EA21D6059B007F26B2 /* dicts */ = {
-			isa = PBXGroup;
-			children = (
-				E1AFC3EB21D6059B007F26B2 /* zocr0.lib */,
-			);
-			path = dicts;
-			sourceTree = "<group>";
-		};
-		E1AFC3EC21D6059B007F26B2 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				E1AFC3ED21D6059B007F26B2 /* scaningline@2x.png */,
-				E1AFC3EE21D6059B007F26B2 /* scaningline@3x.png */,
-				E1AFC3EF21D6059B007F26B2 /* idcard_back.png */,
-				E1AFC3F021D6059B007F26B2 /* flashlightscan@3x.png */,
-				E1AFC3F121D6059B007F26B2 /* flashlightscan@2x.png */,
-				E1AFC3F221D6059B007F26B2 /* flashlightscan.png */,
-				E1AFC3F321D6059B007F26B2 /* scaningbgimage.png */,
-				E1AFC3F421D6059B007F26B2 /* scaningbgimage@2x.png */,
-				E1AFC3F521D6059B007F26B2 /* scaningbgimage@3x.png */,
-				E1AFC3F621D6059B007F26B2 /* scaningline.png */,
-			);
-			path = Resources;
 			sourceTree = "<group>";
 		};
 		E1B7481222276DC30062C1B9 /* 会员 */ = {
@@ -4556,7 +4344,6 @@
 				EEBB0795223A264900C6E5D3 /* AppraiseViewController.xib in Resources */,
 				E1BA8DC521D081040050382D /* RegisterViewController.xib in Resources */,
 				E166679B21D60F6F00AFAF0B /* ReverseViewController.xib in Resources */,
-				E1AFC40F21D6059B007F26B2 /* scaningbgimage@2x.png in Resources */,
 				E11B290A21D1BB2400F37E0E /* SettingViewController.xib in Resources */,
 				EEB5291322363F640028E8CF /* QiyeZhaopinViewController.xib in Resources */,
 				EEE58044227148B60095D88D /* SearchViewCell.xib in Resources */,
@@ -4587,11 +4374,9 @@
 				6FD812D62272AD2B003B6674 /* GroupChatListViewController.xib in Resources */,
 				EEB528F322363F640028E8CF /* GuiZeSetViewController.xib in Resources */,
 				E15C266A21E5BF7B00C99441 /* GoodsDetailPageViewController.xib in Resources */,
-				E1AFC40E21D6059B007F26B2 /* scaningbgimage.png in Resources */,
 				EEB5290A22363F640028E8CF /* QunDetailViewController.xib in Resources */,
 				E1EA8EFD21E04B490029D01B /* CaiLiaoOrderViewController.xib in Resources */,
 				E1160FBC21C1F824004C9CA5 /* MineViewController.xib in Resources */,
-				E1AFC40A21D6059B007F26B2 /* idcard_back.png in Resources */,
 				E1CF80BF21E7196300D1B7EB /* Assets.xcassets in Resources */,
 				EE0963512251C2560007C9CF /* SectionView.xib in Resources */,
 				E157965421D3223C00871F56 /* TiXianViewController.xib in Resources */,
@@ -4629,13 +4414,11 @@
 				EEB5293822363F640028E8CF /* findWorkingCell.xib in Resources */,
 				6FDF104722699E43004F8213 /* MessageHeaderView.xib in Resources */,
 				E15E87FC21D7210D00E6F93F /* ServerFocusListCell.xib in Resources */,
-				E1AFC40921D6059B007F26B2 /* scaningline@3x.png in Resources */,
 				E1310E7D21D45E9100939AFA /* MineInfoViewController.xib in Resources */,
 				EEBB07772239D99200C6E5D3 /* UnusualViewController.xib in Resources */,
 				E1775F7221DC4EB300391F85 /* GoodsBrowseHistoryListViewController.xib in Resources */,
 				EEB5292A22363F640028E8CF /* WorkZhaogongrenController.xib in Resources */,
 				E1B7481C2227B7410062C1B9 /* SoundReminderCell.xib in Resources */,
-				E1AFC41221D6059B007F26B2 /* JYBD_IDCardRecognition.podspec in Resources */,
 				E157372D221546D5000004BB /* JiFenStoreViewController.xib in Resources */,
 				EEB5293422363F640028E8CF /* WorkFabujiluCell.xib in Resources */,
 				EEEB9975223B55E900193E28 /* wx_more_tap@2x.png in Resources */,
@@ -4675,8 +4458,6 @@
 				EE973228228ABDA6007CB0C7 /* SelectSpecView.xib in Resources */,
 				E199FD1C21D4B05A0036CA46 /* MyOrderPageViewController.xib in Resources */,
 				EEB5293722363F640028E8CF /* FindFabujianliController.xib in Resources */,
-				E1AFC40B21D6059B007F26B2 /* flashlightscan@3x.png in Resources */,
-				E1AFC40821D6059B007F26B2 /* scaningline@2x.png in Resources */,
 				EEF6A5E122603FA70047E3B2 /* BaoBiaoDetailViewController.xib in Resources */,
 				E1775F7721DC4ED100391F85 /* ServerBrowseHistoryListViewController.xib in Resources */,
 				6F9419562254582B009D6A21 /* BaojiadanDetailViewController.xib in Resources */,
@@ -4743,9 +4524,7 @@
 				EE973232228AD319007CB0C7 /* SelectCollectionViewCell.xib in Resources */,
 				6F941970225498C5009D6A21 /* BaoJiaDanCCell.xib in Resources */,
 				EEB5290222363F640028E8CF /* QunguanliCell.xib in Resources */,
-				E1AFC40C21D6059B007F26B2 /* flashlightscan@2x.png in Resources */,
 				EEB5290722363F640028E8CF /* GuizeManagerViewController.xib in Resources */,
-				E1AFC40D21D6059B007F26B2 /* flashlightscan.png in Resources */,
 				EEBB07812239EB4600C6E5D3 /* YichangchuliViewController.xib in Resources */,
 				EEB528D422363F640028E8CF /* GuanlianCailiaoCell.xib in Resources */,
 				E1F8DA3921E46E090066D04C /* StoreDetailCommentCell.xib in Resources */,
@@ -4763,17 +4542,14 @@
 				6FDD698A227188A300BD0D90 /* AddFriendDetailViewController.xib in Resources */,
 				EEE4D4BB225ED4450058AE80 /* ImagBtnCCell.xib in Resources */,
 				EEB528D722363F640028E8CF /* GuanlianCailiaoViewController.xib in Resources */,
-				E1AFC40721D6059B007F26B2 /* zocr0.lib in Resources */,
 				EEB528DC22363F640028E8CF /* XiangmuFenleiViewController.xib in Resources */,
 				E157373222154A79000004BB /* JiFenGoodsCell.xib in Resources */,
-				E1AFC41021D6059B007F26B2 /* scaningbgimage@3x.png in Resources */,
 				EEB528CD22363F640028E8CF /* HomeViewController.xib in Resources */,
 				6F46FE11226B0116005434D8 /* GongChengFuWuCell.xib in Resources */,
 				EEB528F722363F640028E8CF /* SetPeopleViewController.xib in Resources */,
 				EEB5291822363F640028E8CF /* FabuZhaopinViewController.xib in Resources */,
 				E1EA8EF821E04AEB0029D01B /* CartPageViewController.xib in Resources */,
 				6FEA87A5226F038600BA4EF7 /* AddFriendCell.xib in Resources */,
-				E1AFC41121D6059B007F26B2 /* scaningline.png in Resources */,
 				EEB651582254564300B188CF /* ZIdongjisuanController.xib in Resources */,
 				E15C267921E5C8CF00C99441 /* GoodsDetailBuyMessageViewController.xib in Resources */,
 				E16FA5B021E2E388007F3F4D /* StoreClassListCell.xib in Resources */,
@@ -4921,7 +4697,6 @@
 				EEB5292922363F640028E8CF /* workViewController.m in Sources */,
 				EEBB077B2239E5B100C6E5D3 /* UnusualCell.m in Sources */,
 				EEEB995E223B399F00193E28 /* YBPopupMenu.m in Sources */,
-				E1AFC3F821D6059B007F26B2 /* UIImage+IDCardExtend.m in Sources */,
 				EEDF7A292244D67B00213189 /* StuffListModel.m in Sources */,
 				EEB6F143229D3E4A0045D138 /* SearchDataModel.m in Sources */,
 				E157964821D30DDC00871F56 /* SoundReminderViewController.m in Sources */,
@@ -4932,7 +4707,6 @@
 				EEB528DE22363F640028E8CF /* CaiLiaoYuSuanViewController.m in Sources */,
 				EEB8581F228BB748001B5E40 /* MallSearchViewController.m in Sources */,
 				E16FA5AA21E2E09F007F3F4D /* StoreClassListViewController.m in Sources */,
-				E1AFC3FC21D6059B007F26B2 /* JYBDBankCardVC.m in Sources */,
 				EE973236228AD46B007CB0C7 /* SelectSpecTableViewCell.m in Sources */,
 				EEEB99DC223BB3FD00193E28 /* IQPreviousNextView.m in Sources */,
 				EEB9AC25225C32070015DF1A /* SpecSkuModel.m in Sources */,
@@ -5006,7 +4780,6 @@
 				E1775F7621DC4ED100391F85 /* ServerBrowseHistoryListViewController.m in Sources */,
 				EEB5290422363F640028E8CF /* PeopleManagerViewController.m in Sources */,
 				EEB5290F22363F640028E8CF /* ChineseString.m in Sources */,
-				E1AFC40021D6059B007F26B2 /* JYBDBankCardInfo.m in Sources */,
 				E15E87E221D71FF200E6F93F /* GoodsFocusListViewController.m in Sources */,
 				EED239F22259C47C00D0EC90 /* VideoTool.m in Sources */,
 				EE0AD61022C7677A002478AC /* PPBadgeControl.m in Sources */,
@@ -5038,7 +4811,6 @@
 				EE0AD61222C7677A002478AC /* UIView+PPBadgeView.m in Sources */,
 				EED239F62259C47C00D0EC90 /* DZBaseViewController.m in Sources */,
 				E1DCA1C821D5EF7D00968B6C /* FrontViewController.m in Sources */,
-				E1AFC3F921D6059B007F26B2 /* UIAlertController+IDCardExtend.m in Sources */,
 				EEEB99DE223BB3FD00193E28 /* IQKeyboardManager.m in Sources */,
 				EE7BEA2D224E101B0000FCB9 /* StuffInfoModel.m in Sources */,
 				EE9602602288F14700DB1379 /* BusinessCell.m in Sources */,
@@ -5055,7 +4827,6 @@
 				EEBB07802239EB4600C6E5D3 /* YichangchuliViewController.m in Sources */,
 				EEB5290B22363F640028E8CF /* QunDetailViewController.m in Sources */,
 				6F94195B2254636F009D6A21 /* GongZhongBaojiaDanCell.m in Sources */,
-				E1AFC40121D6059B007F26B2 /* JYBDCardIDInfo.m in Sources */,
 				E11B291F21D1D64C00F37E0E /* FSLoopScrollView.m in Sources */,
 				E15C266921E5BF7B00C99441 /* GoodsDetailPageViewController.m in Sources */,
 				EEB5292C22363F640028E8CF /* WorkZhaogongrenController.m in Sources */,
@@ -5104,12 +4875,9 @@
 				6F9BDCA62259A801003B2D60 /* TPKeyboardAvoidingCollectionView.m in Sources */,
 				EED239F32259C47C00D0EC90 /* UIView+IDCard.m in Sources */,
 				EE5E2E1622BC84DB0063E758 /* NSString+CZHExtension.m in Sources */,
-				E1AFC3FB21D6059B007F26B2 /* JYBDIDCardVC.m in Sources */,
 				E1BA8DCE21D0905D0050382D /* ForgetPasswordViewController.m in Sources */,
 				E1DCA1C221D5B10A00968B6C /* AddAddressViewController.m in Sources */,
-				E1AFC3FA21D6059B007F26B2 /* JYBDScanCardBaseVC.m in Sources */,
 				EE299AE822A90DDA0003FFC0 /* HandModel.m in Sources */,
-				E1AFC3FF21D6059B007F26B2 /* JYBDScanCardManageBase.m in Sources */,
 				EEB5291622363F640028E8CF /* QiyeZhaopinViewController.m in Sources */,
 				EED239ED2259C47C00D0EC90 /* UITextField+IDCard.m in Sources */,
 				6F9EACBE2266FB7700C78216 /* GongRenFindWorkListModel.m in Sources */,
@@ -5128,7 +4896,6 @@
 				E13C855421C8C137001ADBA0 /* UICollectionView+JHNoData.m in Sources */,
 				E157964E21D31AAA00871F56 /* RenGongServerViewController.m in Sources */,
 				6FD812D52272AD2B003B6674 /* GroupChatListViewController.m in Sources */,
-				E1AFC40621D6059B007F26B2 /* IDCardRectManager.m in Sources */,
 				6FD812DA2272B382003B6674 /* SelectFriendsListViewController.m in Sources */,
 				EEE3EE1F2248B11400EFBC07 /* stuffProjectModel.m in Sources */,
 				6F3420A82255DB3900AEB607 /* CalendarDateView.m in Sources */,
@@ -5176,7 +4943,6 @@
 				E11E7F75222FAE8200A3392D /* CaiLiaoDanDetailCell.m in Sources */,
 				6FEA878B226EDBD900BA4EF7 /* FriendsListCell.m in Sources */,
 				EEEB9972223B55E900193E28 /* WXPhotoBrowerCell.m in Sources */,
-				E1AFC3FE21D6059B007F26B2 /* JYBDBankCardSearch.m in Sources */,
 				E15E87E721D7201600E6F93F /* StoreFocusListViewController.m in Sources */,
 				EEB5293B22363F640028E8CF /* FindWorkingViewController.m in Sources */,
 				EEE5803F22713ADD0095D88D /* GroupModel.m in Sources */,
@@ -5286,7 +5052,6 @@
 				6F94196F225498C5009D6A21 /* BaoJiaDanCCell.m in Sources */,
 				6FDF10532269D297004F8213 /* SystemMessageListCell.m in Sources */,
 				E199FD1021D4825D0036CA46 /* TransactionRecordCell.m in Sources */,
-				E1AFC3FD21D6059B007F26B2 /* JYBDScanCardManage.m in Sources */,
 				EEBB07762239D99200C6E5D3 /* UnusualViewController.m in Sources */,
 				EEA5DC96224B648D00C8039F /* BannerModel.m in Sources */,
 				EECE2764229B760D003D2CAC /* InputView.m in Sources */,
@@ -5294,7 +5059,6 @@
 				EECA9D4522560EE9005A3ED3 /* WXApiManager.m in Sources */,
 				EE22A57C22647D1D006536E9 /* CmtDataModel.m in Sources */,
 				EEB528E422363F640028E8CF /* ChaichuDetailViewController.m in Sources */,
-				E1AFC40221D6059B007F26B2 /* JYBDNewFormeScaningV.m in Sources */,
 				EEB528CC22363F640028E8CF /* HomeViewController.m in Sources */,
 				EEB651672254B34F00B188CF /* SubModel.m in Sources */,
 				EEB8583F228C140C001B5E40 /* SGQRCodeScanView.m in Sources */,
@@ -5546,6 +5310,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/SanMuZhuangXiu/第三方/JYBD_IDCardRecognition/Classes/exbankcardcore",
 					"$(PROJECT_DIR)/SanMuZhuangXiu/第三方/WechtSDK1.8.2",
+					"$(PROJECT_DIR)/SanMuZhuangXiu/第三方/HYBStarEvaluationView/JYBD_IDCardRecognition/Classes/exbankcardcore",
 				);
 				OTHER_LIBTOOLFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Future.Sanmu;
@@ -5583,6 +5348,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/SanMuZhuangXiu/第三方/JYBD_IDCardRecognition/Classes/exbankcardcore",
 					"$(PROJECT_DIR)/SanMuZhuangXiu/第三方/WechtSDK1.8.2",
+					"$(PROJECT_DIR)/SanMuZhuangXiu/第三方/HYBStarEvaluationView/JYBD_IDCardRecognition/Classes/exbankcardcore",
 				);
 				OTHER_LIBTOOLFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Future.Sanmu;
