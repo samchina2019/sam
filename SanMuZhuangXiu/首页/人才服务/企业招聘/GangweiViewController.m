@@ -23,7 +23,7 @@
 #import "BusinessCell.h"
 #import "BusinessCellTwo.h"
 #import "ActivityTwoModel.h"
-#import "UIView+SetRect.h"
+//#import "UIView+SetRect.h"
 typedef enum : NSUInteger {
 
     kBusinessOne = 20,

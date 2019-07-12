@@ -23,10 +23,10 @@
 - (float)height{ return self.frame.size.height;}
 
 - (void)setBottom:(float)bottom{ self.frame = CGRectMake(self.left, self.top, self.width, (bottom-self.top)); }
-- (float)bottom{ return (self.frame.origin.y + self.frame.size.height);}
+//- (float)bottom{ return (self.frame.origin.y + self.frame.size.height);}
 
 - (void)setRight:(float)right{ self.frame = CGRectMake(right-self.width, self.top, self.width, self.height); }
-- (float)right{ return (self.frame.origin.x + self.frame.size.width);}
+//- (float)right{ return (self.frame.origin.x + self.frame.size.width);}
 
 - (void)setOrigin:(CGPoint)origin{ self.frame = CGRectMake(origin.x, origin.y, self.width, self.height);}
 - (CGPoint)origin{ return CGPointMake(self.frame.origin.x, self.frame.origin.y);}

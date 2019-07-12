@@ -29,9 +29,9 @@
     self.frame = frame;
 }
 
-- (CGFloat)tz_right {
-    return self.frame.origin.x + self.frame.size.width;
-}
+//- (CGFloat)tz_right {
+//    return self.frame.origin.x + self.frame.size.width;
+//}
 
 - (void)setTz_right:(CGFloat)right {
     CGRect frame = self.frame;
@@ -39,9 +39,9 @@
     self.frame = frame;
 }
 
-- (CGFloat)tz_bottom {
-    return self.frame.origin.y + self.frame.size.height;
-}
+//- (CGFloat)tz_bottom {
+//    return self.frame.origin.y + self.frame.size.height;
+//}
 
 - (void)setTz_bottom:(CGFloat)bottom {
     CGRect frame = self.frame;
