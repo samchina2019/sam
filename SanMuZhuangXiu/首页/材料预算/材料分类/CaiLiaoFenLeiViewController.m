@@ -973,6 +973,15 @@ static NSString *imgCellId = @"imgCellId";
 }
 
 #pragma mark - XibFunction
+
+//材料单
+
+- (IBAction)cailiaoche:(id)sender {
+    
+    self.tabBarController.selectedIndex=3;
+    [self.navigationController popToRootViewControllerAnimated:NO];
+    
+}
 //自定义材料
 - (IBAction)zidingyicailiao:(id)sender {
     self.ppnumBtn.currentNumber = 1;
@@ -1246,10 +1255,18 @@ static NSString *imgCellId = @"imgCellId";
     self.totalLabel.text = [NSString stringWithFormat:@"共计：%ld种材料", (long) _number];
     if (number == 0) {
         self.numberLabel.hidden = YES;
-        self.totalLabel.hidden = YES;
+        self.totalLabel.text = [NSString stringWithFormat:@"选择材料"];
+        self.totalLabel.textColor =[MTool colorWithHexString:@"#ffffff"];
+        self.xuanhaoBtn.backgroundColor=[MTool colorWithHexString:@"#7f8082"];
+        self.xuanhaoBtn.titleLabel.textColor=[MTool colorWithHexString:@"#ffffff"];
+        [self.cartBtn setImage:[UIImage imageNamed:@"icon_cailiaodan111"] forState:UIControlStateNormal];
     } else {
         self.numberLabel.hidden = NO;
-        self.totalLabel.hidden = NO;
+        self.totalLabel.text = [NSString stringWithFormat:@"已选材料%ld种", (long) _number];
+        self.totalLabel.textColor =[UIColor whiteColor];
+        self.xuanhaoBtn.backgroundColor=[MTool colorWithHexString:@"#2e8cff"];
+        self.xuanhaoBtn.titleLabel.textColor=[UIColor whiteColor];
+        [self.cartBtn setImage:[UIImage imageNamed:@"icon_cailiaodan_yixuan"] forState:UIControlStateNormal];
     }
 }
 
