@@ -14,8 +14,8 @@
 #define kIMageUrl @"http://zhuang.tainongnongzi.com"
 
 /****测试服务器***/
-//#define kDomainUrl @"http://192.168.2.134:102/"
-//#define kIMageUrl @"http://192.168.2.134:102"
+//#define kDomainUrl @"http://47.94.226.125/"
+//#define kIMageUrl @"http://47.94.226.125"
 
 
 #define kServerUrl [NSString stringWithFormat:@"%@api/", kDomainUrl]
@@ -565,3 +565,4 @@
 
 
 #endif /* URLHeader_h */
+

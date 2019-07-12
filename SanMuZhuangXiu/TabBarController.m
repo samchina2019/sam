@@ -126,7 +126,7 @@
         attributes[NSFontAttributeName] = [UIFont systemFontOfSize:13];
 
         NSMutableDictionary *selectAttri = [NSMutableDictionary dictionary];
-        selectAttri[NSForegroundColorAttributeName] = TabbarColor;
+        selectAttri[NSForegroundColorAttributeName] = [MTool colorWithHexString:@"#2e8cff"];
         selectAttri[NSFontAttributeName] = [UIFont systemFontOfSize:11];
 
         vc.tabBarItem.title = title;
@@ -137,6 +137,10 @@
 
         //        vc.tabBarItem.imageInsets = UIEdgeInsetsMake(-5, 0, 5, 0);
         //        [vc.tabBarItem setTitlePositionAdjustment:UIOffsetMake(0, -3)];
+        
+        
+        
+        
     }
 
     DZNavigationController *nav = [[DZNavigationController alloc] initWithRootViewController:vc];

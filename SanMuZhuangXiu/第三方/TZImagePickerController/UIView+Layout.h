@@ -17,7 +17,7 @@ typedef enum : NSUInteger {
 @property (nonatomic) CGFloat tz_left;        ///< Shortcut for frame.origin.x.
 @property (nonatomic) CGFloat tz_top;         ///< Shortcut for frame.origin.y
 @property (nonatomic) CGFloat tz_right;       ///< Shortcut for frame.origin.x + frame.size.width
-@property (nonatomic) CGFloat tz_bottom;      ///< Shortcut for frame.origin.y + frame.size.height
+//@property (nonatomic) CGFloat tz_bottom;      ///< Shortcut for frame.origin.y + frame.size.height
 @property (nonatomic) CGFloat tz_width;       ///< Shortcut for frame.size.width.
 @property (nonatomic) CGFloat tz_height;      ///< Shortcut for frame.size.height.
 @property (nonatomic) CGFloat tz_centerX;     ///< Shortcut for center.x

@@ -43,11 +43,11 @@
 //    return self.frame.origin.y + self.frame.size.height;
 //}
 
-- (void)setTz_bottom:(CGFloat)bottom {
-    CGRect frame = self.frame;
-    frame.origin.y = bottom - frame.size.height;
-    self.frame = frame;
-}
+//- (void)setTz_bottom:(CGFloat)bottom {
+//    CGRect frame = self.frame;
+//    frame.origin.y = bottom - frame.size.height;
+//    self.frame = frame;
+//}
 
 - (CGFloat)tz_width {
     return self.frame.size.width;

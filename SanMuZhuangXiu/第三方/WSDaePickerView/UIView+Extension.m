@@ -112,7 +112,25 @@
 }
 
 
+- (CGFloat)bottom {
+    return self.frame.size.height + self.frame.origin.y;
+}
 
+- (void)setBottom:(CGFloat)bottom {
+    CGRect frame = self.frame;
+    frame.origin.y = bottom - frame.size.height;
+    self.frame = frame;
+}
+
+- (CGFloat)right {
+    return self.frame.size.width + self.frame.origin.x;
+}
+
+- (void)setRight:(CGFloat)right {
+    CGRect frame = self.frame;
+    frame.origin.x = right - frame.size.width;
+    self.frame = frame;
+}
 
 #pragma mark - layer
 - (void)rounded:(CGFloat)cornerRadius {

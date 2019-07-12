@@ -22,6 +22,11 @@
 		181BC59222D832A8001995F5 /* MAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 181BC58222D832A8001995F5 /* MAlertView.m */; };
 		181BC59322D832A8001995F5 /* MTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 181BC58322D832A8001995F5 /* MTool.m */; };
 		181BC59422D832A8001995F5 /* YDButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 181BC58922D832A8001995F5 /* YDButton.m */; };
+		181BC59D22D85759001995F5 /* WSDatePickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 181BC59922D85759001995F5 /* WSDatePickerView.xib */; };
+		181BC59E22D85759001995F5 /* WSDatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 181BC59A22D85759001995F5 /* WSDatePickerView.m */; };
+		181BC59F22D85759001995F5 /* NSDate+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 181BC59B22D85759001995F5 /* NSDate+Extension.m */; };
+		181BC5A022D85759001995F5 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 181BC59C22D85759001995F5 /* UIView+Extension.m */; };
+		181BC5A322D86264001995F5 /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 181BC5A122D86264001995F5 /* TabBarController.m */; };
 		6F082463226DB69800A2E924 /* ZuJiListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F082462226DB69800A2E924 /* ZuJiListModel.m */; };
 		6F145413228FE74300AC97E2 /* ChangePhoneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F145411228FE74300AC97E2 /* ChangePhoneViewController.m */; };
 		6F145414228FE74300AC97E2 /* ChangePhoneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F145412228FE74300AC97E2 /* ChangePhoneViewController.xib */; };
@@ -157,7 +162,6 @@
 		E1160E5121C1E7B9004C9CA5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E1160E5021C1E7B9004C9CA5 /* AppDelegate.m */; };
 		E1160E5C21C1E7BB004C9CA5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1160E5A21C1E7BB004C9CA5 /* LaunchScreen.storyboard */; };
 		E1160E5F21C1E7BB004C9CA5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E1160E5E21C1E7BB004C9CA5 /* main.m */; };
-		E1160E6B21C1E858004C9CA5 /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1160E6521C1E857004C9CA5 /* TabBarController.m */; };
 		E1160E6C21C1E858004C9CA5 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = E1160E6621C1E857004C9CA5 /* User.m */; };
 		E1160E6D21C1E858004C9CA5 /* CustomTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = E1160E6921C1E857004C9CA5 /* CustomTabBar.m */; };
 		E1160F4421C1E8C9004C9CA5 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = E1160F4321C1E8C9004C9CA5 /* Podfile */; };
@@ -654,10 +658,6 @@
 		EEE680452276DEDB00D71178 /* detailDateModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EEE680442276DEDB00D71178 /* detailDateModel.m */; };
 		EEE680482277081F00D71178 /* ShenheModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EEE680472277081F00D71178 /* ShenheModel.m */; };
 		EEE9880B2281313B00604F0F /* PurchaseCarAnimationTool.m in Sources */ = {isa = PBXBuildFile; fileRef = EEE9880A2281313B00604F0F /* PurchaseCarAnimationTool.m */; };
-		EEEB9951223B2DAF00193E28 /* WSDatePickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEEB994D223B2DAF00193E28 /* WSDatePickerView.xib */; };
-		EEEB9952223B2DAF00193E28 /* WSDatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = EEEB994E223B2DAF00193E28 /* WSDatePickerView.m */; };
-		EEEB9953223B2DAF00193E28 /* NSDate+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = EEEB994F223B2DAF00193E28 /* NSDate+Extension.m */; };
-		EEEB9954223B2DAF00193E28 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = EEEB9950223B2DAF00193E28 /* UIView+Extension.m */; };
 		EEEB995C223B399F00193E28 /* YBRectConst.m in Sources */ = {isa = PBXBuildFile; fileRef = EEEB9957223B399F00193E28 /* YBRectConst.m */; };
 		EEEB995D223B399F00193E28 /* YBPopupMenuPath.m in Sources */ = {isa = PBXBuildFile; fileRef = EEEB9958223B399F00193E28 /* YBPopupMenuPath.m */; };
 		EEEB995E223B399F00193E28 /* YBPopupMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = EEEB995A223B399F00193E28 /* YBPopupMenu.m */; };
@@ -730,6 +730,15 @@
 		181BC58822D832A8001995F5 /* MAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAlertView.h; sourceTree = "<group>"; };
 		181BC58922D832A8001995F5 /* YDButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDButton.m; sourceTree = "<group>"; };
 		181BC58A22D832A8001995F5 /* MTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTool.h; sourceTree = "<group>"; };
+		181BC59622D85759001995F5 /* NSDate+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Extension.h"; sourceTree = "<group>"; };
+		181BC59722D85759001995F5 /* WSDatePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSDatePickerView.h; sourceTree = "<group>"; };
+		181BC59822D85759001995F5 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		181BC59922D85759001995F5 /* WSDatePickerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WSDatePickerView.xib; sourceTree = "<group>"; };
+		181BC59A22D85759001995F5 /* WSDatePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSDatePickerView.m; sourceTree = "<group>"; };
+		181BC59B22D85759001995F5 /* NSDate+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Extension.m"; sourceTree = "<group>"; };
+		181BC59C22D85759001995F5 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		181BC5A122D86264001995F5 /* TabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarController.m; sourceTree = "<group>"; };
+		181BC5A222D86264001995F5 /* TabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarController.h; sourceTree = "<group>"; };
 		4F452A51381D0DD1D3067085 /* libPods-SanMuZhuangXiu.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SanMuZhuangXiu.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F082407226D686200A2E924 /* domoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = domoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F082412226D686200A2E924 /* domoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = domoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -930,12 +939,10 @@
 		E1160E5B21C1E7BB004C9CA5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E1160E5D21C1E7BB004C9CA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E1160E5E21C1E7BB004C9CA5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; wrapsLines = 0; };
-		E1160E6521C1E857004C9CA5 /* TabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarController.m; sourceTree = "<group>"; };
 		E1160E6621C1E857004C9CA5 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		E1160E6721C1E857004C9CA5 /* CustomTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTabBar.h; sourceTree = "<group>"; };
 		E1160E6821C1E857004C9CA5 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		E1160E6921C1E857004C9CA5 /* CustomTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTabBar.m; sourceTree = "<group>"; };
-		E1160E6A21C1E858004C9CA5 /* TabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarController.h; sourceTree = "<group>"; };
 		E1160F4121C1E8AC004C9CA5 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		E1160F4221C1E8AC004C9CA5 /* URLHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = URLHeader.h; sourceTree = "<group>"; wrapsLines = 0; };
 		E1160F4321C1E8C9004C9CA5 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -1747,13 +1754,6 @@
 		EEE680472277081F00D71178 /* ShenheModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShenheModel.m; sourceTree = "<group>"; };
 		EEE988092281313B00604F0F /* PurchaseCarAnimationTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PurchaseCarAnimationTool.h; sourceTree = "<group>"; };
 		EEE9880A2281313B00604F0F /* PurchaseCarAnimationTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PurchaseCarAnimationTool.m; sourceTree = "<group>"; };
-		EEEB994A223B2DAF00193E28 /* NSDate+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Extension.h"; sourceTree = "<group>"; };
-		EEEB994B223B2DAF00193E28 /* WSDatePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSDatePickerView.h; sourceTree = "<group>"; };
-		EEEB994C223B2DAF00193E28 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
-		EEEB994D223B2DAF00193E28 /* WSDatePickerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WSDatePickerView.xib; sourceTree = "<group>"; };
-		EEEB994E223B2DAF00193E28 /* WSDatePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSDatePickerView.m; sourceTree = "<group>"; };
-		EEEB994F223B2DAF00193E28 /* NSDate+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Extension.m"; sourceTree = "<group>"; };
-		EEEB9950223B2DAF00193E28 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 		EEEB9956223B399F00193E28 /* YBPopupMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBPopupMenu.h; sourceTree = "<group>"; };
 		EEEB9957223B399F00193E28 /* YBRectConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBRectConst.m; sourceTree = "<group>"; };
 		EEEB9958223B399F00193E28 /* YBPopupMenuPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBPopupMenuPath.m; sourceTree = "<group>"; };
@@ -1945,6 +1945,20 @@
 				181BC57D22D832A8001995F5 /* NewLoadingView.h */,
 			);
 			path = LoadingView;
+			sourceTree = "<group>";
+		};
+		181BC59522D85759001995F5 /* WSDaePickerView */ = {
+			isa = PBXGroup;
+			children = (
+				181BC59622D85759001995F5 /* NSDate+Extension.h */,
+				181BC59722D85759001995F5 /* WSDatePickerView.h */,
+				181BC59822D85759001995F5 /* UIView+Extension.h */,
+				181BC59922D85759001995F5 /* WSDatePickerView.xib */,
+				181BC59A22D85759001995F5 /* WSDatePickerView.m */,
+				181BC59B22D85759001995F5 /* NSDate+Extension.m */,
+				181BC59C22D85759001995F5 /* UIView+Extension.m */,
+			);
+			path = WSDaePickerView;
 			sourceTree = "<group>";
 		};
 		231B75A195F95893C6688760 /* Frameworks */ = {
@@ -2429,8 +2443,8 @@
 				E1160E5021C1E7B9004C9CA5 /* AppDelegate.m */,
 				E1160E6721C1E857004C9CA5 /* CustomTabBar.h */,
 				E1160E6921C1E857004C9CA5 /* CustomTabBar.m */,
-				E1160E6A21C1E858004C9CA5 /* TabBarController.h */,
-				E1160E6521C1E857004C9CA5 /* TabBarController.m */,
+				181BC5A222D86264001995F5 /* TabBarController.h */,
+				181BC5A122D86264001995F5 /* TabBarController.m */,
 				E1160E6821C1E857004C9CA5 /* User.h */,
 				E1160E6621C1E857004C9CA5 /* User.m */,
 				181BC57622D832A8001995F5 /* MyTool */,
@@ -2456,6 +2470,7 @@
 		E1160E9421C1E8A2004C9CA5 /* 第三方 */ = {
 			isa = PBXGroup;
 			children = (
+				181BC59522D85759001995F5 /* WSDaePickerView */,
 				EE0AD60122C7677A002478AC /* PPBadgeView */,
 				EE5E2E0922BC84DB0063E758 /* CZHTagsView */,
 				EEB85830228C140C001B5E40 /* SGQRCode */,
@@ -2466,7 +2481,6 @@
 				EEEB99B1223BB3FD00193E28 /* IQKeyboardManager */,
 				EEEB995F223B55E900193E28 /* WXPhotoBrower */,
 				EEEB9955223B399F00193E28 /* YBPopupMenu */,
-				EEEB9949223B2DAF00193E28 /* WSDaePickerView */,
 				EEBC147B223A48D0000F4C2D /* TZImagePickerController */,
 				E1EA8EFE21E07D6A0029D01B /* PPNumberButton */,
 				E12B523A21D86B6B0082B9A1 /* HYBStarEvaluationView */,
@@ -4138,20 +4152,6 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		EEEB9949223B2DAF00193E28 /* WSDaePickerView */ = {
-			isa = PBXGroup;
-			children = (
-				EEEB994A223B2DAF00193E28 /* NSDate+Extension.h */,
-				EEEB994B223B2DAF00193E28 /* WSDatePickerView.h */,
-				EEEB994C223B2DAF00193E28 /* UIView+Extension.h */,
-				EEEB994D223B2DAF00193E28 /* WSDatePickerView.xib */,
-				EEEB994E223B2DAF00193E28 /* WSDatePickerView.m */,
-				EEEB994F223B2DAF00193E28 /* NSDate+Extension.m */,
-				EEEB9950223B2DAF00193E28 /* UIView+Extension.m */,
-			);
-			path = WSDaePickerView;
-			sourceTree = "<group>";
-		};
 		EEEB9955223B399F00193E28 /* YBPopupMenu */ = {
 			isa = PBXGroup;
 			children = (
@@ -4471,7 +4471,6 @@
 				E199FD1621D482820036CA46 /* BangDingZhangHuViewController.xib in Resources */,
 				E1160F4421C1E8C9004C9CA5 /* Podfile in Resources */,
 				E1160E5C21C1E7BB004C9CA5 /* LaunchScreen.storyboard in Resources */,
-				EEEB9951223B2DAF00193E28 /* WSDatePickerView.xib in Resources */,
 				6FDF104F2269D22E004F8213 /* SystemMessageViewController.xib in Resources */,
 				EE8B712522390DFD00BA9846 /* YanshouhuoCell.xib in Resources */,
 				EEB455BC226F16A2004CE58C /* UnusualSectionView.xib in Resources */,
@@ -4635,6 +4634,7 @@
 				6FEA87A5226F038600BA4EF7 /* AddFriendCell.xib in Resources */,
 				EEB651582254564300B188CF /* ZIdongjisuanController.xib in Resources */,
 				E15C267921E5C8CF00C99441 /* GoodsDetailBuyMessageViewController.xib in Resources */,
+				181BC59D22D85759001995F5 /* WSDatePickerView.xib in Resources */,
 				E16FA5B021E2E388007F3F4D /* StoreClassListCell.xib in Resources */,
 				EEB5292222363F640028E8CF /* QiuziviewCell.xib in Resources */,
 				6F2E3799226FF7AB00F80296 /* ContactCell.xib in Resources */,
@@ -4829,6 +4829,7 @@
 				6F34209E2255D3A200AEB607 /* TongJiBaoBiaoViewController.m in Sources */,
 				E16FA5BE21E32871007F3F4D /* StoreDetailCommentViewController.m in Sources */,
 				E11B292021D1D64C00F37E0E /* NSTimer+FSLoop.m in Sources */,
+				181BC59F22D85759001995F5 /* NSDate+Extension.m in Sources */,
 				EEBC147A223A3231000F4C2D /* XHStarRateView.m in Sources */,
 				E1EA8F0521E07DF60029D01B /* CartListCell.m in Sources */,
 				E11B291E21D1D64C00F37E0E /* FSPageContentView.m in Sources */,
@@ -4843,7 +4844,6 @@
 				EECCEDF522697F5300D11C2B /* JiFenOrderModel.m in Sources */,
 				EE897E94228867B300C11CAD /* YaoqiuModel.m in Sources */,
 				6FF925A6229540D7004240B5 /* GoodsHuoDongCell.m in Sources */,
-				EEEB9952223B2DAF00193E28 /* WSDatePickerView.m in Sources */,
 				EE0963572251E6B50007C9CF /* HebingCartModel.m in Sources */,
 				E16FA5C321E32885007F3F4D /* StoreDetailInfoViewController.m in Sources */,
 				EED238F822599F1300D0EC90 /* BlockAlertView.m in Sources */,
@@ -4893,6 +4893,7 @@
 				6FEA879E226F021400BA4EF7 /* AddFriendViewController.m in Sources */,
 				EEB5290322363F640028E8CF /* ShenheManagerViewController.m in Sources */,
 				E1775F7B21DC4EF300391F85 /* MyPublishViewController.m in Sources */,
+				181BC59E22D85759001995F5 /* WSDatePickerView.m in Sources */,
 				6FDF104522699E2F004F8213 /* MessageFooterView.m in Sources */,
 				EE96025C2288F14700DB1379 /* CustomCollectionViewCell.m in Sources */,
 				EE0AD61222C7677A002478AC /* UIView+PPBadgeView.m in Sources */,
@@ -4903,6 +4904,7 @@
 				EE9602602288F14700DB1379 /* BusinessCell.m in Sources */,
 				EEB528D822363F640028E8CF /* GuanlianCailiaoViewController.m in Sources */,
 				EE96025A2288F14700DB1379 /* TypeCellClass.m in Sources */,
+				181BC5A022D85759001995F5 /* UIView+Extension.m in Sources */,
 				6F825333226420140007984A /* pinyin.c in Sources */,
 				EEB8583D228C140C001B5E40 /* SGQRCodeGenerateManager.m in Sources */,
 				E1160E6D21C1E858004C9CA5 /* CustomTabBar.m in Sources */,
@@ -4926,7 +4928,6 @@
 				EEC8E859226D48BF00DA90FC /* CartJiesuanViewController.m in Sources */,
 				E1775F6C21DC4EA000391F85 /* StoreBrowseHistoryListViewController.m in Sources */,
 				E16FA5B921E3281E007F3F4D /* StoreDetailGoodsViewController.m in Sources */,
-				E1160E6B21C1E858004C9CA5 /* TabBarController.m in Sources */,
 				EEC8E862226D943E00DA90FC /* CartSellerModel.m in Sources */,
 				EEB36CDE2272DAD7006E72A1 /* AMapTipAnnotation.m in Sources */,
 				E1F8DA3D21E4734D0066D04C /* MyPingJiaImgCollectionViewCell.m in Sources */,
@@ -5102,7 +5103,6 @@
 				EEEB9979223B798200193E28 /* JinduTableViewCell.m in Sources */,
 				EEB455C7226F2D2A004CE58C /* AbnormalModel.m in Sources */,
 				EED8E3112244853A003D2535 /* GangweiViewController.m in Sources */,
-				EEEB9953223B2DAF00193E28 /* NSDate+Extension.m in Sources */,
 				EED239F92259C47C00D0EC90 /* DZBaseWebViewController.m in Sources */,
 				EED239EB2259C47C00D0EC90 /* NSString+Additions.m in Sources */,
 				6F145413228FE74300AC97E2 /* ChangePhoneViewController.m in Sources */,
@@ -5111,6 +5111,7 @@
 				EEEB996F223B55E900193E28 /* KNActionSheet.m in Sources */,
 				EEB528E622363F640028E8CF /* GongchengfuwuViewController.m in Sources */,
 				EE973226228ABD94007CB0C7 /* SelectSpecView.m in Sources */,
+				181BC5A322D86264001995F5 /* TabBarController.m in Sources */,
 				EED239E32259C47C00D0EC90 /* WAMediaPlayer.m in Sources */,
 				181BC59322D832A8001995F5 /* MTool.m in Sources */,
 				EEB528ED22363F640028E8CF /* SetTableViewCell.m in Sources */,
@@ -5158,7 +5159,6 @@
 				EEB651672254B34F00B188CF /* SubModel.m in Sources */,
 				EEB8583F228C140C001B5E40 /* SGQRCodeScanView.m in Sources */,
 				6FDF104E2269D22E004F8213 /* SystemMessageViewController.m in Sources */,
-				EEEB9954223B2DAF00193E28 /* UIView+Extension.m in Sources */,
 				EEB5292522363F640028E8CF /* QiuziviewCell.m in Sources */,
 				EE09634C2251952F0007C9CF /* SelectStoreModel.m in Sources */,
 				EEB5293522363F640028E8CF /* workViewCell.m in Sources */,

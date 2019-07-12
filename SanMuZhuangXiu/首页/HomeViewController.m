@@ -17,6 +17,7 @@
 #import "StoreDetailViewController.h"
 #import <UShareUI/UShareUI.h>
 #import "NewCaiLiaoViewController.h"
+#import "CaiLiaoFenLeiViewController.h"
 
 @interface HomeViewController ()<SDCycleScrollViewDelegate>
 

@@ -24,10 +24,12 @@
 @property (nonatomic, assign) CGFloat height;
 /**  顶部  */
 @property (nonatomic, assign) CGFloat top;
-
+/**  底部  */
+@property (nonatomic, assign) CGFloat bottom;
 /**  左边  */
 @property (nonatomic, assign) CGFloat left;
-
+/**  右边  */
+@property (nonatomic, assign) CGFloat right;
 /**  size  */
 @property (nonatomic, assign) CGSize size;
 /**  origin */
