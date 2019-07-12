@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddFriendsListViewController">
+            <connections>
+                <outlet property="searchBar" destination="xWL-IP-axK" id="8J1-ll-fJA"/>
+                <outlet property="tableView" destination="Fng-tB-bA0" id="1fL-cz-A2N"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Fng-tB-bA0">
+                    <rect key="frame" x="0.0" y="177" width="414" height="685"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="zdQ-hI-nNr"/>
+                        <outlet property="delegate" destination="-1" id="MD6-9v-ufo"/>
+                    </connections>
+                </tableView>
+                <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="xWL-IP-axK">
+                    <rect key="frame" x="0.0" y="44" width="414" height="53"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="53" id="7yd-tJ-Tpv"/>
+                    </constraints>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="d9n-rU-NEZ"/>
+                    </connections>
+                </searchBar>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9hn-Qi-1EM" customClass="ReLayoutButton">
+                    <rect key="frame" x="20" y="97" width="374" height="70"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="B95-EO-XKX"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <state key="normal" title="添加手机联系人" image="icon_shouji">
+                        <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layoutType">
+                            <integer key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="addPhoneConnectBtnClicked:" destination="-1" eventType="touchUpInside" id="Re1-HS-Vex"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0XO-0x-Ss2">
+                    <rect key="frame" x="0.0" y="167" width="414" height="10"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="10" id="R1M-xc-Xmc"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="xWL-IP-axK" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="15L-g7-zyq"/>
+                <constraint firstItem="0XO-0x-Ss2" firstAttribute="top" secondItem="9hn-Qi-1EM" secondAttribute="bottom" id="6Jg-xe-yIY"/>
+                <constraint firstItem="Fng-tB-bA0" firstAttribute="bottom" secondItem="Q5M-cg-NOt" secondAttribute="bottom" id="8PS-mh-v9D"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="9hn-Qi-1EM" secondAttribute="trailing" constant="20" id="UgE-RF-qIa"/>
+                <constraint firstItem="xWL-IP-axK" firstAttribute="trailing" secondItem="Q5M-cg-NOt" secondAttribute="trailing" id="YIM-S4-gjU"/>
+                <constraint firstItem="0XO-0x-Ss2" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="YNr-iK-a65"/>
+                <constraint firstItem="9hn-Qi-1EM" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="20" id="acG-U8-dYm"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="Fng-tB-bA0" secondAttribute="trailing" id="eAF-s2-0e3"/>
+                <constraint firstItem="xWL-IP-axK" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" id="els-AQ-aM9"/>
+                <constraint firstItem="Fng-tB-bA0" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="kda-fe-8YA"/>
+                <constraint firstItem="9hn-Qi-1EM" firstAttribute="top" secondItem="xWL-IP-axK" secondAttribute="bottom" id="pre-LK-I3Q"/>
+                <constraint firstItem="Fng-tB-bA0" firstAttribute="top" secondItem="0XO-0x-Ss2" secondAttribute="bottom" id="xgR-Ba-xkp"/>
+                <constraint firstItem="0XO-0x-Ss2" firstAttribute="trailing" secondItem="Q5M-cg-NOt" secondAttribute="trailing" id="yGM-i3-bhM"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="140.57971014492756" y="94.419642857142847"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_shouji" width="14" height="23"/>
+    </resources>
+</document>
