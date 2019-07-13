@@ -11,7 +11,8 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface SelectSpecView : UIView
-@property (weak, nonatomic) IBOutlet UITableView *guigetableView;
+@property (weak, nonatomic) IBOutlet UIView *MiddleView;
+@property (strong, nonatomic)  UITableView *guigetableView;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (weak, nonatomic) IBOutlet UIView *bottomView;
 @property (weak, nonatomic) IBOutlet UIButton *sureBtn;
@@ -23,6 +24,10 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) BOOL isFromGuanlian;//属否来自关联
 @property (nonatomic, strong) NSMutableArray *dataArray;
 @property (nonatomic, strong) NSMutableArray *selectDataArray;
+
+//材料名称 选择弹框
+@property (strong, nonatomic)  UITextField*xuanzefild;
+
 
 @property (copy, nonatomic) void (^sureBlock)(NSArray *array);
 @property (copy, nonatomic) void (^deleteBlock)(void);

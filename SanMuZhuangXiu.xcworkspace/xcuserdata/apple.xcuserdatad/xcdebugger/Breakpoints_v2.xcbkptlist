@@ -9,13 +9,29 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "SanMuZhuangXiu/&#x9996;&#x9875;/&#x6750;&#x6599;&#x9884;&#x7b97;/&#x6750;&#x6599;&#x5206;&#x7c7b;/CaiLiaoFenLeiViewController.m"
-            timestampString = "584614903.554513"
+            filePath = "SanMuZhuangXiu/&#x9996;&#x9875;/&#x6750;&#x6599;&#x9884;&#x7b97;/&#x6750;&#x6599;&#x5206;&#x7c7b;/&#x9009;&#x62e9;&#x6750;&#x6599;&#x89c4;&#x683c;/SelectSpecView.m"
+            timestampString = "584621011.534377"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "418"
-            endingLineNumber = "418"
+            startingLineNumber = "150"
+            endingLineNumber = "150"
             landmarkName = "-tableView:cellForRowAtIndexPath:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SanMuZhuangXiu/&#x9996;&#x9875;/&#x6750;&#x6599;&#x9884;&#x7b97;/&#x6750;&#x6599;&#x5206;&#x7c7b;/&#x9009;&#x62e9;&#x6750;&#x6599;&#x89c4;&#x683c;/SelectSpecView.m"
+            timestampString = "584621011.5347151"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "76"
+            endingLineNumber = "76"
+            landmarkName = "-CreateHeardView"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

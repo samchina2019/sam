@@ -16,6 +16,11 @@
 
 
 @interface SelectSpecView () <UITableViewDelegate, UITableViewDataSource>
+{
+    UILabel*titLab;
+    
+    
+}
 
 @property (nonatomic, strong) NSDictionary *dict;
 /// 是否选中
@@ -37,6 +42,8 @@
 
     self.specIdArray = [NSMutableArray arrayWithCapacity:0];
 
+    [self CreateHeardView];
+
     [self initTableView];
 
     return self;
@@ -45,11 +52,13 @@
 #pragma mark – UI
 
 - (void)initTableView {
+    self.guigetableView=[[UITableView alloc]initWithFrame:CGRectMake(0, SCREEN_WIDTH/750*610, SCREEN_WIDTH, SCREEN_WIDTH/750*300) style:UITableViewStylePlain];
     self.guigetableView.delegate = self;
     self.guigetableView.dataSource = self;
 
     [self.guigetableView registerNib:[UINib nibWithNibName:@"SpecCollectionViewCell" bundle:nil] forCellReuseIdentifier:@"SpecCollectionViewCell"];
     self.guigetableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    [self addSubview:self.guigetableView];
 
     if (self.isFromGuanlian) {
         self.tableView.backgroundColor = [UIColor clearColor];
@@ -61,6 +70,57 @@
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     [self.tableView registerNib:[UINib nibWithNibName:@"SelectSpecTableViewCell" bundle:nil] forCellReuseIdentifier:@"SelectSpecTableViewCell"];
+}
+-(void)CreateHeardView{
+    
+    UIView*BGView=[[UIView alloc]initWithFrame:CGRectMake(0, SCREEN_WIDTH/750*400, SCREEN_WIDTH, SCREEN_WIDTH/750*210)];
+    BGView.backgroundColor=[UIColor whiteColor];
+    
+    titLab=[[UILabel alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_WIDTH/750*100)];
+    titLab.font=[UIFont systemFontOfSize:18];
+    titLab.textAlignment=NSTextAlignmentCenter;
+    [BGView addSubview:titLab];
+    
+    UILabel*PinPaiLab=[[UILabel alloc]initWithFrame:CGRectMake(SCREEN_WIDTH/750*30, SCREEN_WIDTH/750*120, SCREEN_WIDTH/750*100, SCREEN_WIDTH/750*50)];
+    PinPaiLab.text=@"品牌";
+    PinPaiLab.font=[UIFont systemFontOfSize:16];
+    [BGView addSubview:PinPaiLab];
+    _xuanzefild=[[UITextField alloc]initWithFrame:CGRectMake(SCREEN_WIDTH/750*80+SCREEN_WIDTH/750*36, SCREEN_WIDTH/750*120, SCREEN_WIDTH/750*380, SCREEN_WIDTH/750*50)];
+    _xuanzefild.placeholder=@"请选择品牌名称";
+    _xuanzefild.layer.borderColor= [MTool colorWithHexString:@"#edeff2"].CGColor;
+    _xuanzefild.layer.borderWidth= 1.0f;
+    _xuanzefild.font=[UIFont systemFontOfSize:14];
+    
+    UIImageView*rightview=[[UIImageView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH/750*32, SCREEN_WIDTH/750*32)];
+    _xuanzefild.backgroundColor = [MTool colorWithHexString:@"#f9f9f9"];
+    [rightview setImage:[UIImage imageNamed:@"xiasanjiao"]];
+    _xuanzefild.rightView=rightview;
+    _xuanzefild.rightViewMode = UITextFieldViewModeAlways;
+    
+    [BGView addSubview:_xuanzefild];
+    
+    UIButton*PinPaiBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    PinPaiBtn.frame = CGRectMake(0, SCREEN_WIDTH/750*120, SCREEN_WIDTH, SCREEN_WIDTH/750*50);
+//    [PinPaiBtn addTarget:self action:@selector(selectPinpai:) forControlEvents:UIControlEventTouchUpInside];
+    [BGView addSubview:PinPaiBtn];
+    
+    UIButton*ClosedBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    ClosedBtn.frame = CGRectMake( SCREEN_WIDTH-SCREEN_WIDTH/750*24-SCREEN_WIDTH/750*44, SCREEN_WIDTH/750*28, SCREEN_WIDTH/750*44, SCREEN_WIDTH/750*44);
+    [ClosedBtn setImage:[UIImage imageNamed:@"clfl_ico_lose"] forState:UIControlStateNormal];
+    [ClosedBtn addTarget:self action:@selector(closed:) forControlEvents:UIControlEventTouchUpInside];
+    [BGView addSubview:ClosedBtn];
+    
+    //分割线 clfl_ico_lose
+    UIView*lineView = [[UIView alloc]initWithFrame:CGRectMake(0, 209*SCREEN_WIDTH/750 , SCREEN_WIDTH, 1)];
+    lineView.backgroundColor = [MTool colorWithHexString:@"#edeff2"];
+    [BGView addSubview:lineView];
+    [self addSubview:BGView];
+//    self.guigetableView.tableHeaderView=BGView;
+    self.guigetableView.frame=CGRectMake(0, BGView.bottom, self.guigetableView.frame.size.width, self.guigetableView.frame.size.height);
+    
+}
+-(void)CreateMiddleView{
+    
 }
 #pragma mark - <UITableViewDelegate和DataSource>
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(nonnull NSIndexPath *)indexPath {
@@ -92,6 +152,8 @@
 
         SpecCollectionViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"SpecCollectionViewCell"];
         if (self.dataArray.count != 0) {
+
+            titLab.text=[NSString stringWithFormat:@"%@",_name];
 
             GuigeModel *guigeModel = self.dataArray[indexPath.row];
 
@@ -170,6 +232,11 @@
 }
 
 #pragma mark - XibFunction
+
+//关闭
+- (void)closed:(UIButton*)sender {
+    [self removeFromSuperview];
+}
 - (IBAction)cancelBtnClick:(id)sender {
     [self removeFromSuperview];
 }
