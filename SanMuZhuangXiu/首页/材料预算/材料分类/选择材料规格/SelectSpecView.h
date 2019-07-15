@@ -7,13 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "StuffListModel.h"
 NS_ASSUME_NONNULL_BEGIN
 
 @interface SelectSpecView : UIView
 @property (weak, nonatomic) IBOutlet UIView *MiddleView;
 @property (strong, nonatomic)  UITableView *guigetableView;
-@property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (strong, nonatomic)  UITableView *tableView;
 @property (weak, nonatomic) IBOutlet UIView *bottomView;
 @property (weak, nonatomic) IBOutlet UIButton *sureBtn;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *tebleViewHeight;
@@ -27,10 +27,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 //材料名称 选择弹框
 @property (strong, nonatomic)  UITextField*xuanzefild;
-
+@property (strong, nonatomic) StuffListModel *model;
 
 @property (copy, nonatomic) void (^sureBlock)(NSArray *array);
 @property (copy, nonatomic) void (^deleteBlock)(void);
+@property (copy, nonatomic) void(^pinpaiBlock)(NSString*name);
+
 @end
 
 NS_ASSUME_NONNULL_END

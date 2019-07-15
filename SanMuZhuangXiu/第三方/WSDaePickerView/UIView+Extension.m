@@ -113,7 +113,7 @@
 
 
 - (CGFloat)bottom {
-    return self.frame.size.height + self.frame.origin.y;
+    return self.frame.origin.y + self.frame.size.height;
 }
 
 - (void)setBottom:(CGFloat)bottom {

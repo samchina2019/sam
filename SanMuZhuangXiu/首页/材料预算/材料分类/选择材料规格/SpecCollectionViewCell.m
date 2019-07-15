@@ -59,14 +59,17 @@
         
         model.isSelected=YES;
         
-        cell.nameLabel.backgroundColor=UIColorFromRGB(0x3FAEE9);
+        cell.nameLabel.backgroundColor=RGBCOLOR(217, 231, 253);
         cell.nameLabel.borderColor=UIColorFromRGB(0x3FAEE9);
+        cell.nameLabel.textColor=[MTool colorWithHexString:@"#2e8cff"];
     }else{
         
         model.isSelected=NO;
         
-       cell.nameLabel.backgroundColor=[UIColor whiteColor];
-       cell.nameLabel.borderColor=[UIColor grayColor];
+       cell.nameLabel.backgroundColor=[MTool colorWithHexString:@"#f5f5f5"];
+       cell.nameLabel.borderColor=[UIColor clearColor];
+        cell.nameLabel.textColor=[MTool colorWithHexString:@"#7f8082"];
+
     }
     
     return cell;

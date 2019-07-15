@@ -20,17 +20,17 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="规格1" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DhD-MC-Fi7">
-                        <rect key="frame" x="10" y="10" width="40" height="21"/>
+                        <rect key="frame" x="15" y="10" width="40" height="21"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="21" id="33E-ph-07K"/>
                             <constraint firstAttribute="width" constant="40" id="xNL-S5-BIj"/>
                         </constraints>
-                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
                         <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="nHe-BM-tql">
-                        <rect key="frame" x="58" y="0.0" width="254" height="92.5"/>
+                        <rect key="frame" x="68" y="0.0" width="254" height="92.5"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="92.5" id="pCB-tY-7ig"/>
@@ -46,8 +46,8 @@
                             <outlet property="delegate" destination="-1" id="IGS-HG-ASX"/>
                         </connections>
                     </collectionView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nc0-68-Qaw">
-                        <rect key="frame" x="10" y="92.5" width="302" height="1"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="251" ambiguous="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nc0-68-Qaw">
+                        <rect key="frame" x="312" y="92.5" width="0.0" height="1"/>
                         <color key="backgroundColor" red="0.8784313725490196" green="0.8784313725490196" blue="0.8784313725490196" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="1" id="Nn2-lt-0yK"/>
@@ -58,15 +58,13 @@
                     </label>
                 </subviews>
                 <constraints>
+                    <constraint firstItem="nHe-BM-tql" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="68" id="3A2-SH-izY"/>
                     <constraint firstItem="nHe-BM-tql" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="AIr-YN-jyG"/>
-                    <constraint firstItem="DhD-MC-Fi7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="Ak9-pv-8ag"/>
+                    <constraint firstItem="DhD-MC-Fi7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="Ak9-pv-8ag"/>
                     <constraint firstAttribute="bottom" secondItem="nc0-68-Qaw" secondAttribute="bottom" id="BCw-9m-Xar"/>
-                    <constraint firstItem="nHe-BM-tql" firstAttribute="leading" secondItem="DhD-MC-Fi7" secondAttribute="trailing" constant="8" id="CXg-M2-Xs9"/>
                     <constraint firstItem="DhD-MC-Fi7" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="GWC-Tf-Ozk"/>
-                    <constraint firstItem="nc0-68-Qaw" firstAttribute="leading" secondItem="DhD-MC-Fi7" secondAttribute="leading" id="Sue-v3-RJ7"/>
-                    <constraint firstAttribute="trailing" secondItem="nHe-BM-tql" secondAttribute="trailing" constant="10" id="TWC-na-YZh"/>
+                    <constraint firstAttribute="trailing" secondItem="nHe-BM-tql" secondAttribute="trailing" id="knq-Gg-k0W"/>
                     <constraint firstAttribute="bottom" secondItem="nHe-BM-tql" secondAttribute="bottom" constant="1" id="tde-pr-IeT"/>
-                    <constraint firstItem="nc0-68-Qaw" firstAttribute="trailing" secondItem="nHe-BM-tql" secondAttribute="trailing" id="vfh-VM-Of3"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>

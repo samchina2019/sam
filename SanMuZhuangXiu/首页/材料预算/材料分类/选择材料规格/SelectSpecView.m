@@ -15,9 +15,12 @@
 #import "SpecGuigeModel.h"
 
 
-@interface SelectSpecView () <UITableViewDelegate, UITableViewDataSource>
+@interface SelectSpecView () <UITableViewDelegate, UITableViewDataSource,UIActionSheetDelegate,UIAlertViewDelegate>
 {
     UILabel*titLab;
+    UIView*BGView;
+    UIView*BGMiddleView;
+    NSString*pinpainame;
     
     
 }
@@ -29,6 +32,7 @@
 @property (nonatomic, strong) NSMutableArray *tempArray;
 @property (nonatomic, strong) NSMutableArray *selectArray;
 @property (nonatomic, strong) NSMutableArray *specIdArray;
+@property (nonatomic, strong) NSArray *PinPaiArray;
 @end
 @implementation SelectSpecView
 
@@ -43,37 +47,20 @@
     self.specIdArray = [NSMutableArray arrayWithCapacity:0];
 
     [self CreateHeardView];
-
-    [self initTableView];
+    [self GuigetableView];
+    [self CreateMiddleView];
+    [self XunazhongtableView];
 
     return self;
 }
 
 #pragma mark – UI
 
-- (void)initTableView {
-    self.guigetableView=[[UITableView alloc]initWithFrame:CGRectMake(0, SCREEN_WIDTH/750*610, SCREEN_WIDTH, SCREEN_WIDTH/750*300) style:UITableViewStylePlain];
-    self.guigetableView.delegate = self;
-    self.guigetableView.dataSource = self;
 
-    [self.guigetableView registerNib:[UINib nibWithNibName:@"SpecCollectionViewCell" bundle:nil] forCellReuseIdentifier:@"SpecCollectionViewCell"];
-    self.guigetableView.separatorStyle = UITableViewCellSeparatorStyleNone;
-    [self addSubview:self.guigetableView];
-
-    if (self.isFromGuanlian) {
-        self.tableView.backgroundColor = [UIColor clearColor];
-        self.hideTableViewHeight.constant = 0;
-    } else {
-        self.tableView.backgroundColor = [UIColor groupTableViewBackgroundColor];
-        self.hideTableViewHeight.constant = 120;
-    }
-    self.tableView.delegate = self;
-    self.tableView.dataSource = self;
-    [self.tableView registerNib:[UINib nibWithNibName:@"SelectSpecTableViewCell" bundle:nil] forCellReuseIdentifier:@"SelectSpecTableViewCell"];
-}
 -(void)CreateHeardView{
     
-    UIView*BGView=[[UIView alloc]initWithFrame:CGRectMake(0, SCREEN_WIDTH/750*400, SCREEN_WIDTH, SCREEN_WIDTH/750*210)];
+    self.sureBtn.layer.cornerRadius=15.f;
+    BGView=[[UIView alloc]initWithFrame:CGRectMake(0,SCREEN_HEIGHT-SafeAreaBottomHeight-50-637*SCREEN_WIDTH/750, SCREEN_WIDTH, SCREEN_WIDTH/750*210)];
     BGView.backgroundColor=[UIColor whiteColor];
     
     titLab=[[UILabel alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_WIDTH/750*100)];
@@ -81,7 +68,7 @@
     titLab.textAlignment=NSTextAlignmentCenter;
     [BGView addSubview:titLab];
     
-    UILabel*PinPaiLab=[[UILabel alloc]initWithFrame:CGRectMake(SCREEN_WIDTH/750*30, SCREEN_WIDTH/750*120, SCREEN_WIDTH/750*100, SCREEN_WIDTH/750*50)];
+    UILabel*PinPaiLab=[[UILabel alloc]initWithFrame:CGRectMake(15, SCREEN_WIDTH/750*120, SCREEN_WIDTH/750*100, SCREEN_WIDTH/750*50)];
     PinPaiLab.text=@"品牌";
     PinPaiLab.font=[UIFont systemFontOfSize:16];
     [BGView addSubview:PinPaiLab];
@@ -89,6 +76,7 @@
     _xuanzefild.placeholder=@"请选择品牌名称";
     _xuanzefild.layer.borderColor= [MTool colorWithHexString:@"#edeff2"].CGColor;
     _xuanzefild.layer.borderWidth= 1.0f;
+    _xuanzefild.textAlignment=NSTextAlignmentCenter;
     _xuanzefild.font=[UIFont systemFontOfSize:14];
     
     UIImageView*rightview=[[UIImageView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH/750*32, SCREEN_WIDTH/750*32)];
@@ -119,15 +107,61 @@
     self.guigetableView.frame=CGRectMake(0, BGView.bottom, self.guigetableView.frame.size.width, self.guigetableView.frame.size.height);
     
 }
+-(void)GuigetableView {
+    self.guigetableView=[[UITableView alloc]initWithFrame:CGRectMake(0, BGView.bottom, SCREEN_WIDTH, SCREEN_WIDTH/750*300) style:UITableViewStylePlain];
+    self.guigetableView.delegate = self;
+    self.guigetableView.dataSource = self;
+    
+    [self.guigetableView registerNib:[UINib nibWithNibName:@"SpecCollectionViewCell" bundle:nil] forCellReuseIdentifier:@"SpecCollectionViewCell"];
+    self.guigetableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    [self addSubview:self.guigetableView];
+    
+    
+}
 -(void)CreateMiddleView{
+    
+    BGMiddleView=[[UIView alloc]initWithFrame:CGRectMake(0, self.guigetableView.bottom , SCREEN_WIDTH, SCREEN_WIDTH/750*127)];
+    BGMiddleView.backgroundColor=[UIColor whiteColor];
+    [self addSubview:BGMiddleView];
+    
+    UIButton*AddGuiGeBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    AddGuiGeBtn.frame = CGRectMake((SCREEN_WIDTH-SCREEN_WIDTH/750*250)/2,(SCREEN_WIDTH/750*127-SCREEN_WIDTH/750*60)/2, SCREEN_WIDTH/750*250, SCREEN_WIDTH/750*60);
+    AddGuiGeBtn.backgroundColor=[MTool colorWithHexString:@"2e8cff"];
+    [AddGuiGeBtn setTitle:@"添加规格" forState:UIControlStateNormal];
+    [AddGuiGeBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    AddGuiGeBtn.titleLabel.font = [UIFont systemFontOfSize:16];
+    [AddGuiGeBtn addTarget:self action:@selector(addGuigeBtnClick:) forControlEvents:UIControlEventTouchUpInside];
+    [BGMiddleView addSubview:AddGuiGeBtn];
+}
+
+
+-(void)XunazhongtableView{
+    self.tableView=[[UITableView alloc]initWithFrame:CGRectMake(0,BGMiddleView.bottom,  SCREEN_WIDTH, SCREEN_HEIGHT-SafeAreaBottomHeight-BGMiddleView.bottom-50) style:UITableViewStylePlain];
+    self.tableView.separatorStyle=UITableViewCellSelectionStyleNone;
+    self.tableView.backgroundColor=[UIColor grayColor];
+    self.tableView.delegate = self;
+    self.tableView.dataSource = self;
+    [self addSubview:self.tableView];
+    if (self.isFromGuanlian) {
+        self.tableView.backgroundColor = [UIColor clearColor];
+        self.hideTableViewHeight.constant = 0;
+    } else {
+        self.tableView.backgroundColor = [UIColor groupTableViewBackgroundColor];
+        self.hideTableViewHeight.constant = 120;
+    }
+ [self.tableView registerNib:[UINib nibWithNibName:@"SelectSpecTableViewCell" bundle:nil] forCellReuseIdentifier:@"SelectSpecTableViewCell"];
+    NSLog(@"%@", [NSString stringWithFormat:@"aaaaaaa%f",BGMiddleView.bottom]);
     
 }
 #pragma mark - <UITableViewDelegate和DataSource>
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(nonnull NSIndexPath *)indexPath {
 
     if (tableView == self.guigetableView) {
+         GuigeModel *guigeModel = self.dataArray[indexPath.row];
+        NSArray *array=guigeModel.data;
+        int number=(int)array.count;
 
-        return 50;
+        return 50*(1+number/4);
     } else {
         return 40;
     }
@@ -152,7 +186,6 @@
 
         SpecCollectionViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"SpecCollectionViewCell"];
         if (self.dataArray.count != 0) {
-
             titLab.text=[NSString stringWithFormat:@"%@",_name];
 
             GuigeModel *guigeModel = self.dataArray[indexPath.row];
@@ -236,13 +269,48 @@
 //关闭
 - (void)closed:(UIButton*)sender {
     [self removeFromSuperview];
+    self.deleteBlock();
+
+}
+
+//选择品牌
+- (void)selectPinpai:(UIButton*)sender {
+    
+    UIActionSheet *sheet =[[UIActionSheet alloc] initWithTitle:nil delegate:self cancelButtonTitle:@"取消" destructiveButtonTitle:nil otherButtonTitles:nil, nil];
+    _PinPaiArray=_model.brand;
+    for (int i=0; i<_PinPaiArray.count; i++) {
+        NSDictionary*dic=_PinPaiArray[i];
+        pinpainame=dic[@"name"];
+        [sheet addButtonWithTitle:[NSString stringWithFormat:@"%@",pinpainame]];
+
+    }
+    [sheet showInView:self];
+    
+}
+-(void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex{
+    _PinPaiArray=_model.brand;
+    for (int i=0; i<_PinPaiArray.count; i++) {
+          if (buttonIndex==i+1) {
+        NSDictionary*dic=_PinPaiArray[i];
+        pinpainame=dic[@"name"];
+        _xuanzefild.text=[NSString stringWithFormat:@"%@",pinpainame];
+              self.pinpaiBlock(pinpainame);
+          }
+    }
 }
 - (IBAction)cancelBtnClick:(id)sender {
+    self.deleteBlock();
+
     [self removeFromSuperview];
 }
 //添加规格
 - (IBAction)addGuigeBtnClick:(id)sender {
     
+     BGView.frame=CGRectMake(0, SCREEN_WIDTH/750*500, SCREEN_WIDTH, SCREEN_WIDTH/750*210);
+     self.guigetableView.frame=CGRectMake(0, BGView.bottom, SCREEN_WIDTH, SCREEN_WIDTH/750*300);
+      BGMiddleView.frame=CGRectMake(0, self.guigetableView.bottom , SCREEN_WIDTH, SCREEN_WIDTH/750*127);
+
+     self.tableView.frame=CGRectMake(0,BGMiddleView.bottom,  SCREEN_WIDTH, SCREEN_HEIGHT-SafeAreaBottomHeight-BGMiddleView.bottom-50);
     if (self.tempArray.count == 0) {
         [DZTools showNOHud:@"暂无规格" delay:2];
         return;
@@ -254,7 +322,7 @@
         NSString *idStr = @"";
 
         for (SpecGuigeModel *model in self.tempArray) {
-            nameStr = [nameStr stringByAppendingFormat:@"%@ ", model.name];
+            nameStr = [nameStr stringByAppendingFormat:@"%@  ", model.name];
             idStr = [idStr stringByAppendingFormat:@"%ld", (long)model.stuff_spec_id];
         }
         NSDictionary *dict = @{
@@ -348,5 +416,8 @@
         }
     }
     [self.guigetableView reloadData];
+}
+-(void)setModel:(StuffListModel *)model{
+    _model=model;
 }
 @end

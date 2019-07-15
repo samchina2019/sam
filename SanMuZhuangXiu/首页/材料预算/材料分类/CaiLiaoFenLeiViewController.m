@@ -42,8 +42,9 @@ static NSString *imgCellId = @"imgCellId";
 
 @interface CaiLiaoFenLeiViewController () <CZHTagsViewDelegate, CZHTagsViewDataSource, PPNumberButtonDelegate> {
     FilePathManager *filemanager;
+    NSString*pinpainame;
 }
-
+@property (nonatomic, strong)NSString*pinpainame;
 @property (nonatomic, strong) SelectSpecView *selectSpecView;
 @property (nonatomic, retain) TPKeyboardAvoidingScrollView *scrollView;
 @property (strong, nonatomic) CZHTagsView *tagsView;
@@ -605,6 +606,7 @@ static NSString *imgCellId = @"imgCellId";
             self.selectSpecView.frame = CGRectMake(0, 0, ViewWidth, ViewHeight);
             self.selectSpecView.name = cailiaomodel.stuff_name;
             self.selectSpecView.dataArray = self.guigeArray;
+            self.selectSpecView.model= cailiaomodel;
             [self.selectSpecView.selectDataArray removeAllObjects];
             self.selectSpecView.tebleViewHeight.constant = self.guigeArray.count * 50;
             [self.selectSpecView.guigetableView reloadData];
@@ -792,7 +794,7 @@ static NSString *imgCellId = @"imgCellId";
     UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"请选择品牌类型" message:nil preferredStyle:UIAlertControllerStyleActionSheet];
     for (int i = 0; i < self.pinpaiArray.count; i++) {
         PinpaiModel *typeModel = self.pinpaiArray[i];
-
+        
         [alert addAction:[UIAlertAction actionWithTitle:typeModel.name
                                                   style:UIAlertActionStyleDefault
                                                 handler:^(UIAlertAction *_Nonnull action) {
@@ -817,15 +819,15 @@ static NSString *imgCellId = @"imgCellId";
 {
     cell.pinpaiTF.text = @"";
     if (rowInteger < self.pinpaiArray.count) {
-
+        
         PinpaiModel *typeModel = self.pinpaiArray[rowInteger];
-
+        
         cell.pinpaiTF.text = typeModel.name;
         self.stufflistModel.selectBrandDict = @{
-            @"stuff_brand_id": @(typeModel.stuff_brand_id),
-            @"stuff_id": @(typeModel.stuff_id),
-            @"name": typeModel.name
-        };
+                                                @"stuff_brand_id": @(typeModel.stuff_brand_id),
+                                                @"stuff_id": @(typeModel.stuff_id),
+                                                @"name": typeModel.name
+                                                };
     }
     int index = -1;
     for (int i = 0; i < self.selectedCailiao.count; i++) {
@@ -1428,6 +1430,10 @@ static NSString *imgCellId = @"imgCellId";
         };
         _selectSpecView.deleteBlock = ^{
             weakself.selectSpecView = nil;
+        };
+        _selectSpecView.pinpaiBlock = ^(NSString *_Nonnull name){
+            weakself.pinpainame=name;
+            
         };
     }
     

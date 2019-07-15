@@ -16,25 +16,52 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="c3t-0y-ljI">
+                <tableView hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="c3t-0y-ljI">
                     <rect key="frame" x="0.0" y="497" width="375" height="120"/>
                     <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="120" id="0oF-Zm-RG7"/>
                     </constraints>
                     <color key="sectionIndexBackgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                    <connections>
-                        <outlet property="dataSource" destination="-1" id="qQ1-IF-LWd"/>
-                        <outlet property="delegate" destination="-1" id="rPb-sQ-onh"/>
-                    </connections>
                 </tableView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="joe-i6-hY2">
                     <rect key="frame" x="0.0" y="617" width="375" height="50"/>
                     <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cailiao_zengjiaguige" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="q6L-1D-AQT">
+                            <rect key="frame" x="15" y="17" width="16" height="16"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="自定义规格" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k5J-Bd-xfI">
+                            <rect key="frame" x="40" y="15" width="82" height="20"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="textColor" red="0.29443186519999998" green="0.54039192199999997" blue="0.96838957069999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Au6-1M-B0H">
+                            <rect key="frame" x="8" y="10" width="175" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <size key="titleShadowOffset" width="0.0" height="-1"/>
+                            <state key="normal">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="3"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vCJ-V6-mLw">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
-                            <color key="backgroundColor" red="0.2470588235" green="0.68235294120000001" blue="0.91372549020000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <state key="normal" title="确认添加">
+                            <rect key="frame" x="270" y="10" width="90" height="30"/>
+                            <color key="backgroundColor" red="0.1803921568627451" green="0.5490196078431373" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" title="确认">
                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </state>
                             <connections>
@@ -44,14 +71,14 @@
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
-                        <constraint firstItem="vCJ-V6-mLw" firstAttribute="leading" secondItem="joe-i6-hY2" secondAttribute="leading" id="27A-YN-3Sn"/>
-                        <constraint firstAttribute="trailing" secondItem="vCJ-V6-mLw" secondAttribute="trailing" id="8Gh-C0-s5H"/>
-                        <constraint firstItem="vCJ-V6-mLw" firstAttribute="top" secondItem="joe-i6-hY2" secondAttribute="top" id="c5N-ue-14y"/>
-                        <constraint firstAttribute="bottom" secondItem="vCJ-V6-mLw" secondAttribute="bottom" id="uc7-Y4-UaQ"/>
+                        <constraint firstItem="vCJ-V6-mLw" firstAttribute="leading" secondItem="joe-i6-hY2" secondAttribute="leading" constant="270" id="27A-YN-3Sn"/>
+                        <constraint firstAttribute="trailing" secondItem="vCJ-V6-mLw" secondAttribute="trailing" constant="15" id="8Gh-C0-s5H"/>
+                        <constraint firstItem="vCJ-V6-mLw" firstAttribute="top" secondItem="joe-i6-hY2" secondAttribute="top" constant="10" id="c5N-ue-14y"/>
+                        <constraint firstAttribute="bottom" secondItem="vCJ-V6-mLw" secondAttribute="bottom" constant="10" id="uc7-Y4-UaQ"/>
                         <constraint firstAttribute="height" constant="50" id="vpV-40-BIr"/>
                     </constraints>
                 </view>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bdR-LW-Mwj">
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bdR-LW-Mwj">
                     <rect key="frame" x="0.0" y="447" width="375" height="50"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1WK-mi-QVa">
@@ -139,7 +166,6 @@
                 <outlet property="footerView" destination="oW5-AG-6gw" id="Y6g-yd-ygo"/>
                 <outlet property="hideTableViewHeight" destination="0oF-Zm-RG7" id="q9n-v3-Sbp"/>
                 <outlet property="sureBtn" destination="vCJ-V6-mLw" id="5J7-TB-5bf"/>
-                <outlet property="tableView" destination="c3t-0y-ljI" id="dum-l5-HRy"/>
                 <outlet property="tebleViewHeight" destination="C1L-3q-XNY" id="Bjl-Nc-IAV"/>
             </connections>
             <point key="canvasLocation" x="47.200000000000003" y="35.532233883058474"/>
@@ -180,4 +206,7 @@
             <point key="canvasLocation" x="905.07246376811599" y="-718.20652173913049"/>
         </view>
     </objects>
+    <resources>
+        <image name="cailiao_zengjiaguige" width="16" height="16"/>
+    </resources>
 </document>

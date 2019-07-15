@@ -27,6 +27,8 @@
 		181BC59F22D85759001995F5 /* NSDate+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 181BC59B22D85759001995F5 /* NSDate+Extension.m */; };
 		181BC5A022D85759001995F5 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 181BC59C22D85759001995F5 /* UIView+Extension.m */; };
 		181BC5A322D86264001995F5 /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 181BC5A122D86264001995F5 /* TabBarController.m */; };
+		181BC5A622D9F5DE001995F5 /* AddGuiGe.m in Sources */ = {isa = PBXBuildFile; fileRef = 181BC5A522D9F5DD001995F5 /* AddGuiGe.m */; };
+		181BC5A922D9F8E7001995F5 /* AddGuiGeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 181BC5A822D9F8E7001995F5 /* AddGuiGeCell.m */; };
 		6F082463226DB69800A2E924 /* ZuJiListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F082462226DB69800A2E924 /* ZuJiListModel.m */; };
 		6F145413228FE74300AC97E2 /* ChangePhoneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F145411228FE74300AC97E2 /* ChangePhoneViewController.m */; };
 		6F145414228FE74300AC97E2 /* ChangePhoneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F145412228FE74300AC97E2 /* ChangePhoneViewController.xib */; };
@@ -739,6 +741,10 @@
 		181BC59C22D85759001995F5 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 		181BC5A122D86264001995F5 /* TabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarController.m; sourceTree = "<group>"; };
 		181BC5A222D86264001995F5 /* TabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarController.h; sourceTree = "<group>"; };
+		181BC5A422D9F5DD001995F5 /* AddGuiGe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddGuiGe.h; sourceTree = "<group>"; };
+		181BC5A522D9F5DD001995F5 /* AddGuiGe.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddGuiGe.m; sourceTree = "<group>"; };
+		181BC5A722D9F8E7001995F5 /* AddGuiGeCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddGuiGeCell.h; sourceTree = "<group>"; };
+		181BC5A822D9F8E7001995F5 /* AddGuiGeCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddGuiGeCell.m; sourceTree = "<group>"; };
 		4F452A51381D0DD1D3067085 /* libPods-SanMuZhuangXiu.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SanMuZhuangXiu.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F082407226D686200A2E924 /* domoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = domoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F082412226D686200A2E924 /* domoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = domoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -3359,6 +3365,10 @@
 				EE8D9A7C2291384F00947C94 /* EditSpecView.h */,
 				EE8D9A7D2291384F00947C94 /* EditSpecView.m */,
 				EE8D9A7F2291386100947C94 /* EditSpecView.xib */,
+				181BC5A422D9F5DD001995F5 /* AddGuiGe.h */,
+				181BC5A522D9F5DD001995F5 /* AddGuiGe.m */,
+				181BC5A722D9F8E7001995F5 /* AddGuiGeCell.h */,
+				181BC5A822D9F8E7001995F5 /* AddGuiGeCell.m */,
 			);
 			path = "选择材料规格";
 			sourceTree = "<group>";
@@ -4767,6 +4777,7 @@
 				E199FD2521D4B0960036CA46 /* MyOrderListCell.m in Sources */,
 				181BC59422D832A8001995F5 /* YDButton.m in Sources */,
 				E1310E8021D461E900939AFA /* MineInfoIconCell.m in Sources */,
+				181BC5A922D9F8E7001995F5 /* AddGuiGeCell.m in Sources */,
 				EEB8582F228C1388001B5E40 /* ScanSuccessJumpVC.m in Sources */,
 				EEB528DB22363F640028E8CF /* GuanlianCailiaoCell.m in Sources */,
 				EE96025F2288F14700DB1379 /* ActivityModel.m in Sources */,
@@ -5148,6 +5159,7 @@
 				6FDD698522715F3000BD0D90 /* FriendsListModel.m in Sources */,
 				6F94196F225498C5009D6A21 /* BaoJiaDanCCell.m in Sources */,
 				6FDF10532269D297004F8213 /* SystemMessageListCell.m in Sources */,
+				181BC5A622D9F5DE001995F5 /* AddGuiGe.m in Sources */,
 				E199FD1021D4825D0036CA46 /* TransactionRecordCell.m in Sources */,
 				EEBB07762239D99200C6E5D3 /* UnusualViewController.m in Sources */,
 				EEA5DC96224B648D00C8039F /* BannerModel.m in Sources */,

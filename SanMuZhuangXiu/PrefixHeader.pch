@@ -21,13 +21,12 @@
 #import <UIButton+WebCache.h>
 
 #import "MTool.h"
-//#import "UIView+UIViewRect.h"
 #import "UIView+Extension.h"
 
 #import "QXBaseViewController.h"
 #import "QXTableView.h"
 #import "NSDate+Extension.h"
-
+#import "UIView+UIViewRect.h"
 #import "URLHeader.h"
 #import "DZTools.h"
 #import "FrameDefine.h"
