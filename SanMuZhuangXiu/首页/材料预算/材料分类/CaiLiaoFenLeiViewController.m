@@ -24,7 +24,7 @@
 #import "CZHTagsView.h"
 #import "ReLayoutButton.h"
 #import "SelectSpecView.h"
-
+#import "AddGuiGe.h"
 #import "AddressModel.h"
 #import "PinpaiModel.h"
 #import "GongzhongClassModel.h"
@@ -46,6 +46,8 @@ static NSString *imgCellId = @"imgCellId";
 }
 @property (nonatomic, strong)NSString*pinpainame;
 @property (nonatomic, strong) SelectSpecView *selectSpecView;
+@property (nonatomic, strong) AddGuiGe *AddGuiGeView;
+
 @property (nonatomic, retain) TPKeyboardAvoidingScrollView *scrollView;
 @property (strong, nonatomic) CZHTagsView *tagsView;
 @property (nonatomic, strong) CaiLiaoFenLeiCell *selectCell;
@@ -1282,6 +1284,15 @@ static NSString *imgCellId = @"imgCellId";
     }
 }
 
+
+- (AddGuiGe *)AddGuiGeView {
+    if (!_AddGuiGeView) {
+        _AddGuiGeView = [[AddGuiGe alloc] initWithFrame:CGRectMake(0, 0, ViewWidth, ViewHeight)];
+        
+    }
+    return _AddGuiGeView;
+
+}
 - (SelectSpecView *)selectSpecView {
     if (!_selectSpecView) {
         _selectSpecView = [[SelectSpecView alloc] initWithFrame:CGRectMake(0, 0, ViewWidth, ViewHeight)];
@@ -1433,6 +1444,14 @@ static NSString *imgCellId = @"imgCellId";
         };
         _selectSpecView.pinpaiBlock = ^(NSString *_Nonnull name){
             weakself.pinpainame=name;
+            
+        };
+        _selectSpecView.tianjiaBlock = ^(){
+//            weakself.pinpainame=name;
+
+            weakself.AddGuiGeView.frame=CGRectMake(0, 0, SCREEN_WIDTH, 300);
+            [weakself.AddGuiGeView.tableView reloadData];
+            [[DZTools getAppWindow] addSubview:weakself.AddGuiGeView];
             
         };
     }

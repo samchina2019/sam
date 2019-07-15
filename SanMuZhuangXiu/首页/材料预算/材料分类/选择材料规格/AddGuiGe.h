@@ -11,7 +11,8 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface AddGuiGe : UIView
-
+@property(strong,nonatomic) UITableView*tableView;
+@property(strong,nonatomic)UIButton*ClosedBtn;
 @end
 
 NS_ASSUME_NONNULL_END

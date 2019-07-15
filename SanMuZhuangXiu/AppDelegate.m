@@ -52,6 +52,8 @@ static BOOL isProduction = TRUE;
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+     [NSThread sleepForTimeInterval:1];
     //y
     [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
 

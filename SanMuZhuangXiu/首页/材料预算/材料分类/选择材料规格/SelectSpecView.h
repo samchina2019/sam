@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "StuffListModel.h"
+#import "AddGuiGe.h"
 NS_ASSUME_NONNULL_BEGIN
 
 @interface SelectSpecView : UIView
@@ -25,6 +26,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) NSMutableArray *dataArray;
 @property (nonatomic, strong) NSMutableArray *selectDataArray;
 
+
+@property (strong, nonatomic)AddGuiGe*AddGuiGeView;
 //材料名称 选择弹框
 @property (strong, nonatomic)  UITextField*xuanzefild;
 @property (strong, nonatomic) StuffListModel *model;
@@ -32,7 +35,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (copy, nonatomic) void (^sureBlock)(NSArray *array);
 @property (copy, nonatomic) void (^deleteBlock)(void);
 @property (copy, nonatomic) void(^pinpaiBlock)(NSString*name);
-
+@property (copy, nonatomic) void (^tianjiaBlock)(void);
 @end
 
 NS_ASSUME_NONNULL_END

@@ -12,6 +12,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface AddGuiGeCell : UITableViewCell
 
+@property (strong, nonatomic) UIButton       * addBtn;//添加按钮
+@property (copy, nonatomic) void (^tianjiaBlock)(void);
+
+
 @end
 
 NS_ASSUME_NONNULL_END

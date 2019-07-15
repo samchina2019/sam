@@ -370,6 +370,25 @@
 
     [self.tableView reloadData];
 }
+//addBtn
+- (IBAction)addBtnCLicked1111:(id)sender {
+//    self.tianjiaBlock();
+//    [self removeFromSuperview];
+    BGView.hidden=YES;
+    self.guigetableView.hidden=YES;
+    BGMiddleView.hidden=YES;
+    if(!_AddGuiGeView){
+        _AddGuiGeView=[[AddGuiGe alloc]init];
+
+    }
+    _AddGuiGeView.frame=CGRectMake(0, SCREEN_HEIGHT-SafeAreaBottomHeight-50-428*SCREEN_WIDTH/750, SCREEN_WIDTH, 428*SCREEN_WIDTH/750);
+    _AddGuiGeView.backgroundColor=[UIColor whiteColor];
+    [self addSubview:_AddGuiGeView];
+    [_AddGuiGeView.tableView reloadData];
+    [_AddGuiGeView.ClosedBtn addTarget:self action:@selector(closed:) forControlEvents:UIControlEventTouchUpInside];
+    
+}
+
 //确认添加
 - (IBAction)sureBtnClick:(id)sender {
     if (self.selectDataArray.count == 0) {

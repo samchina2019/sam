@@ -10,7 +10,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SanMuZhuangXiu/&#x9996;&#x9875;/&#x6750;&#x6599;&#x9884;&#x7b97;/&#x6750;&#x6599;&#x5206;&#x7c7b;/&#x9009;&#x62e9;&#x6750;&#x6599;&#x89c4;&#x683c;/SelectSpecView.m"
-            timestampString = "584709024.96604"
+            timestampString = "584870093.807161"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "257"
@@ -26,91 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SanMuZhuangXiu/&#x9996;&#x9875;/&#x6750;&#x6599;&#x9884;&#x7b97;/&#x6750;&#x6599;&#x5206;&#x7c7b;/CaiLiaoFenLeiViewController.m"
-            timestampString = "584709024.966125"
+            timestampString = "584870093.807251"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1435"
-            endingLineNumber = "1435"
-            landmarkName = "-selectSpecView"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "SanMuZhuangXiu/&#x9996;&#x9875;/&#x6750;&#x6599;&#x9884;&#x7b97;/&#x6750;&#x6599;&#x5206;&#x7c7b;/CaiLiaoFenLeiViewController.m"
-            timestampString = "584709024.9661829"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1290"
-            endingLineNumber = "1290"
-            landmarkName = "-selectSpecView"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[CaiLiaoFenLeiViewController selectSpecView]"
-                  moduleName = "SanMuZhuangXiu"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/apple/Desktop/Sam/SanMuZhuangXiu/%E9%A6%96%E9%A1%B5/%E6%9D%90%E6%96%99%E9%A2%84%E7%AE%97/%E6%9D%90%E6%96%99%E5%88%86%E7%B1%BB/CaiLiaoFenLeiViewController.m"
-                  timestampString = "584708488.96287"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "1290"
-                  endingLineNumber = "1290"
-                  offsetFromSymbolStart = "535">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__45-[CaiLiaoFenLeiViewController selectSpecView]_block_invoke"
-                  moduleName = "SanMuZhuangXiu"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/apple/Desktop/Sam/SanMuZhuangXiu/%E9%A6%96%E9%A1%B5/%E6%9D%90%E6%96%99%E9%A2%84%E7%AE%97/%E6%9D%90%E6%96%99%E5%88%86%E7%B1%BB/CaiLiaoFenLeiViewController.m"
-                  timestampString = "584708488.964167"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "1291"
-                  endingLineNumber = "1291"
-                  offsetFromSymbolStart = "79">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "SanMuZhuangXiu/&#x9996;&#x9875;/&#x6750;&#x6599;&#x9884;&#x7b97;/&#x6750;&#x6599;&#x5206;&#x7c7b;/&#x9009;&#x62e9;&#x6750;&#x6599;&#x89c4;&#x683c;/SelectSpecView.m"
-            timestampString = "584709024.9662319"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "390"
-            endingLineNumber = "390"
-            landmarkName = "-selectDataArray"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "SanMuZhuangXiu/&#x9996;&#x9875;/&#x6750;&#x6599;&#x9884;&#x7b97;/&#x6750;&#x6599;&#x5206;&#x7c7b;/CaiLiaoFenLeiViewController.m"
-            timestampString = "584709024.966274"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1361"
-            endingLineNumber = "1361"
+            startingLineNumber = "1372"
+            endingLineNumber = "1372"
             landmarkName = "-selectSpecView"
             landmarkType = "7">
          </BreakpointContent>
@@ -122,12 +42,60 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SanMuZhuangXiu/&#x9996;&#x9875;/&#x6750;&#x6599;&#x9884;&#x7b97;/&#x6750;&#x6599;&#x5206;&#x7c7b;/&#x9009;&#x62e9;&#x6750;&#x6599;&#x89c4;&#x683c;/SelectSpecView.m"
-            timestampString = "584709024.966319"
+            timestampString = "584870093.807309"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "225"
             endingLineNumber = "225"
             landmarkName = "-tableView:cellForRowAtIndexPath:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SanMuZhuangXiu/&#x9996;&#x9875;/&#x6750;&#x6599;&#x9884;&#x7b97;/&#x6750;&#x6599;&#x5206;&#x7c7b;/CaiLiaoFenLeiViewController.m"
+            timestampString = "584870093.8073699"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1452"
+            endingLineNumber = "1452"
+            landmarkName = "-selectSpecView"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SanMuZhuangXiu/&#x9996;&#x9875;/&#x6750;&#x6599;&#x9884;&#x7b97;/&#x6750;&#x6599;&#x5206;&#x7c7b;/&#x9009;&#x62e9;&#x6750;&#x6599;&#x89c4;&#x683c;/SelectSpecView.m"
+            timestampString = "584870093.807409"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "381"
+            endingLineNumber = "381"
+            landmarkName = "-addBtnCLicked1111:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SanMuZhuangXiu/&#x9996;&#x9875;/&#x6750;&#x6599;&#x9884;&#x7b97;/&#x6750;&#x6599;&#x5206;&#x7c7b;/&#x9009;&#x62e9;&#x6750;&#x6599;&#x89c4;&#x683c;/SelectSpecView.m"
+            timestampString = "584870093.807447"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "384"
+            endingLineNumber = "384"
+            landmarkName = "-addBtnCLicked1111:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
