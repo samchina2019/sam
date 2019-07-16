@@ -73,6 +73,8 @@
 #define RGBCOLOR(r,g,b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1]
 #define HEIGHTFORHEADER 0.1
 
+//调用AppDelegate
+#define SHAREDAPP ((AppDelegate *)[UIApplication sharedApplication].delegate)
 
 #define Nav_BAR_HEIGHT 44
 

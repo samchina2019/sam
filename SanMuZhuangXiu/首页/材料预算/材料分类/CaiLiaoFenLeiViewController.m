@@ -60,6 +60,7 @@ static NSString *imgCellId = @"imgCellId";
 @property (weak, nonatomic) IBOutlet UITextField *cailiaoNameTF;
 @property (weak, nonatomic) IBOutlet UITextField *cailiaoGuigeTF;
 @property (weak, nonatomic) IBOutlet PPNumberButton *ppnumBtn;
+@property (weak, nonatomic) IBOutlet UILabel *titleLab;
 //规格
 @property (weak, nonatomic) IBOutlet UIView *guigeView;
 @property (weak, nonatomic) IBOutlet UIButton *sureAddBtn;
@@ -453,7 +454,8 @@ static NSString *imgCellId = @"imgCellId";
         }
 
         return cell;
-    } else if (tableView == self.cailiaoDanTableView) {
+    }
+    else if (tableView == self.cailiaoDanTableView) {
 
         CailiaoViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"CailiaoViewCell" forIndexPath:indexPath];
         StuffListModel *cailiaomodel = self.selectedCailiao[indexPath.row];
@@ -850,16 +852,17 @@ static NSString *imgCellId = @"imgCellId";
     UIAlertController *alertController = [UIAlertController alertControllerWithTitle:nil message:@"自定义分类" preferredStyle:UIAlertControllerStyleAlert];
     //定义第一个输入框；
     [alertController addTextFieldWithConfigurationHandler:^(UITextField *_Nonnull textField) {
-        textField.frame = CGRectMake(15, 64, 240, 30);
+        textField.frame = CGRectMake(15, 64, 240,44);
         textField.placeholder = @"请自定义分类";
+        textField.backgroundColor=RGBCOLOR(249, 249, 249);
 
     }];
 
     //    /定义第2个输入框；
-    [alertController addTextFieldWithConfigurationHandler:^(UITextField *_Nonnull textField) {
-        textField.frame = CGRectMake(15, 104, 240, 30);
-        textField.placeholder = @"请描述材料分类";
-    }];
+//    [alertController addTextFieldWithConfigurationHandler:^(UITextField *_Nonnull textField) {
+//        textField.frame = CGRectMake(15, 104, 240, 30);
+//        textField.placeholder = @"请描述材料分类";
+//    }];
     //增加取消按钮；
     [alertController addAction:[UIAlertAction actionWithTitle:@"取消"
                                                         style:UIAlertActionStyleDefault
@@ -1124,13 +1127,18 @@ static NSString *imgCellId = @"imgCellId";
 }
 //选好了按钮的点击
 - (IBAction)shengCailiaoBtnClick:(id)sender {
+    if (![DZTools panduanLoginWithViewContorller:self isHidden:NO]) {
+        return;
+    }
+    else{
     if (self.selectedCailiao.count <= 0) {
         [DZTools showNOHud:@"您还没有选择材料" delay:2];
         [self.yixuanCailiaoView removeFromSuperview];
     } else {
-
         self.hidesBottomBarWhenPushed = YES;
+
         GuanlianCailiaoViewController *viewController = [[GuanlianCailiaoViewController alloc] init];
+        viewController.hidesBottomBarWhenPushed = YES;
         viewController.totalSelectedStuffList = self.selectedCailiao;
         if (viewController.isFromTiaoguo) {
 
@@ -1149,6 +1157,7 @@ static NSString *imgCellId = @"imgCellId";
         self.hidesBottomBarWhenPushed = YES;
 
         [self.yixuanCailiaoView removeFromSuperview];
+    }
     }
 }
 //确定
@@ -1274,6 +1283,7 @@ static NSString *imgCellId = @"imgCellId";
         self.xuanhaoBtn.backgroundColor=[MTool colorWithHexString:@"#7f8082"];
         self.xuanhaoBtn.titleLabel.textColor=[MTool colorWithHexString:@"#ffffff"];
         [self.cartBtn setImage:[UIImage imageNamed:@"icon_cailiaodan111"] forState:UIControlStateNormal];
+        self.titleLab.text = [NSString stringWithFormat:@"已选材料"];
     } else {
         self.numberLabel.hidden = NO;
         self.totalLabel.text = [NSString stringWithFormat:@"已选材料%ld种", (long) _number];
@@ -1281,6 +1291,8 @@ static NSString *imgCellId = @"imgCellId";
         self.xuanhaoBtn.backgroundColor=[MTool colorWithHexString:@"#2e8cff"];
         self.xuanhaoBtn.titleLabel.textColor=[UIColor whiteColor];
         [self.cartBtn setImage:[UIImage imageNamed:@"icon_cailiaodan_yixuan"] forState:UIControlStateNormal];
+        self.titleLab.text = [NSString stringWithFormat:@"已选材料(共%ld种)", (long) _number];
+
     }
 }
 

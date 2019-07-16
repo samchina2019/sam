@@ -18,7 +18,7 @@
     XiangmuFenleiViewController*  XiangmuFenleiVC;
     QXTableView*tableView;
     ZIdongjisuanController*ZIdongjisuanVC;
-    
+    QXSegmentView * segmentView ;
 }
 
 /**
@@ -31,6 +31,20 @@
 
 @implementation NewCaiLiaoViewController
 
+
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    [self.navigationController setNavigationBarHidden:NO animated:YES];
+     segmentView.hidden=NO;
+}
+
+- (void)viewWillDisappear:(BOOL)animated{
+    [super viewWillDisappear:animated];
+    [self.navigationController setNavigationBarHidden:NO animated:YES];
+    segmentView.hidden=YES;
+    self.hidesBottomBarWhenPushed = YES;
+
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
    
@@ -43,7 +57,7 @@
   
     //初始化选择器
     NSArray * titleArray = [NSArray arrayWithObjects:@"材料分类", @"项目分类",@"自动计算",nil];
-    QXSegmentView * segmentView = [[QXSegmentView alloc] initWithFrame:CGRectMake(0, SafeAreaTopHeight-44, SCREEN_WIDTH, 44) titleArray:titleArray];
+    segmentView = [[QXSegmentView alloc] initWithFrame:CGRectMake(72*SCREEN_WIDTH/750, SafeAreaTopHeight-44, SCREEN_WIDTH-150*SCREEN_WIDTH/750, 44) titleArray:titleArray];
     self.selectedDataType=0;
     [self setSelectedIndex: self.selectedDataType];
     segmentView.segmentClickBlock = ^(NSInteger index) {

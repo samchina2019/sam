@@ -41,6 +41,15 @@
         [self.navigationController popViewControllerAnimated:YES];
     }
 }
+
+//- (void)viewWillAppear:(BOOL)animated {
+//    [super viewWillAppear:YES];
+//    self.hidesBottomBarWhenPushed = YES;
+//}
+//- (void)viewDidAppear:(BOOL)animated {
+//    [super viewDidAppear:YES];
+//    SHAREDAPP.rootNav = (UINavigationController *)[self.tabBarController.viewControllers objectAtIndex:self.tabBarController.selectedIndex];
+//}
 /*
 #pragma mark - Navigation
 

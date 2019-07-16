@@ -635,6 +635,9 @@
     [self tiaoguoFunction];
 }
 #pragma mark – 懒加载
+-(void)setTotalSelectedStuffList:(NSArray *)totalSelectedStuffList{
+    _totalSelectedStuffList=totalSelectedStuffList;
+}
 - (TPKeyboardAvoidingScrollView *)scrollView {
     if (!_scrollView) {
         _scrollView = [[TPKeyboardAvoidingScrollView alloc] initWithFrame:CGRectMake(0, 0, ViewWidth, ViewHeight)];

@@ -328,11 +328,14 @@
 //    CaiLiaoYuSuanViewController *viewController = [CaiLiaoYuSuanViewController new];
 //    [self.navigationController pushViewController:viewController animated:YES];
 //    self.hidesBottomBarWhenPushed = NO;
+    if (![DZTools panduanLoginWithViewContorller:self isHidden:NO]) {
+        return;
+    }else{
     self.hidesBottomBarWhenPushed = YES;
     NewCaiLiaoViewController *viewController = [NewCaiLiaoViewController new];
     [self.navigationController pushViewController:viewController animated:YES];
     self.hidesBottomBarWhenPushed = NO;
-}
+    }}
 //工地考勤
 - (void)gongdikaoqin:(UIButton*)sender {
 //    self.numLabel2.hidden = YES;

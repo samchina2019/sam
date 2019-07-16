@@ -22,10 +22,10 @@
     self = [super initWithFrame:frame];
     if (self) {
 //        CGFloat btnWidth = frame.size.width/titleArr.count < 80 ? frame.size.width/titleArr.count:80;
-        CGFloat btnWidth=(SCREEN_WIDTH-100)/titleArr.count;
+        CGFloat btnWidth=(SCREEN_WIDTH-142*SCREEN_WIDTH/750)/titleArr.count;
         for (NSInteger i = 0; i < titleArr.count; i++) {
             UIButton * titleBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-            titleBtn.frame = CGRectMake(50+btnWidth*i, 0, btnWidth, 42);
+            titleBtn.frame = CGRectMake(btnWidth*i, 0, btnWidth, 42);
             titleBtn.titleLabel.font = [UIFont systemFontOfSize:16];
             [titleBtn setTitle:titleArr[i] forState:UIControlStateNormal];
             [titleBtn addTarget:self action:@selector(titleBtnClicked:) forControlEvents:UIControlEventTouchUpInside];

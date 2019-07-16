@@ -18,6 +18,7 @@
 @property (nonatomic) double latitude;
 @property (strong, nonatomic) NSString *city;
 @property (strong, nonatomic) NSString *adress;
+@property (strong, nonatomic) UINavigationController * rootNav;
 
 - (void)getUserInfoWithUserId:(NSString *)userId completion:(void (^)(RCUserInfo *userInfo))completion;
 

@@ -12,8 +12,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface DZBaseViewController : UIViewController
 
-- (void)backItemClicked;
-
+//- (void)backItemClicked;
+// 设置UINvigationBar 左右键方法
+- (void)setNavigationButtonItrmWithiamge:(NSString *)imagename withRightOrleft:(NSString*)f withtargrt:(id)t withAction:(SEL)s;
 @end
 
 NS_ASSUME_NONNULL_END
