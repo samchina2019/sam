@@ -8,7 +8,7 @@
 
 #import "CaiLiaoDanDetailViewController.h"
 #import "CaiLiaoDanDetailHeaderView.h"
-#import "CaiLiaoDanDetailCell.h"
+#import "CailaodanEditCell.h"
 #import "SelectStoreViewController.h"
 #import "CongxinBpViewController.h"
 #import "CartOrdeInfoModel.h"
@@ -17,6 +17,12 @@
 #import "FriendsListViewController.h"
 #import "FriendsListModel.h"
 #import "CaiLiaoOrderViewController.h"
+#import "PinpaiModel.h"
+#import "EditSpecView.h"
+#import "GuigeModel.h"
+#import "SpecGuigeModel.h"
+#import "CaiLiaoFenLeiViewController.h"
+
 
 @interface CaiLiaoDanDetailViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *reEdictBtn;
@@ -25,6 +31,8 @@
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (strong, nonatomic) IBOutlet UIView *tableHeaderView;
 @property (strong, nonatomic) IBOutlet UIView *tableFooterView;
+@property (strong, nonatomic) IBOutlet UIView *bottomView;
+
 @property (weak, nonatomic) IBOutlet UITextField *nameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *gongzhongLabel;
 @property (weak, nonatomic) IBOutlet UIButton *editBtn;
@@ -43,12 +51,25 @@
 @property (nonatomic, strong) NSString *nameStr;
 
 
+@property (strong, nonatomic) NSMutableArray *deleteArray;
+@property (nonatomic, strong) NSIndexPath *index;
+@property (strong, nonatomic) NSMutableArray *pinpaiArray;
+@property (nonatomic, assign) NSInteger stuff_id;
+@property (nonatomic, strong) EditSpecView *editSpecView;
+@property (nonatomic, strong) StuffInfoModel *stuModel;
+@property (nonatomic, strong) NSMutableArray *guigeArray;
+
+
+
+
+
 @end
 
 @implementation CaiLiaoDanDetailViewController
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     [self getDataArrayFMDB];
+    self.tabBarController.tabBar.hidden = YES;
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -58,19 +79,44 @@
     self.dataArray = [NSMutableArray arrayWithCapacity:0];
     self.nameLabel.userInteractionEnabled = NO;
     self.sectionArry = [NSMutableArray array];
+    self.deleteArray = [NSMutableArray array];
+    self.pinpaiArray = [NSMutableArray array];
+    self.guigeArray = [NSMutableArray array];
+    
+    
     [self initTableView];
+    [self initBottomView];
+    [self setupRightItem];
     //        self.priceLabel.text=[NSString stringWithFormat:@"¥0.00"];
 }
 #pragma mark – UI
 - (void)initTableView {
-    self.tableHeaderView.frame = CGRectMake(0, 0, ViewWidth, 110);
+    self.tableHeaderView.frame = CGRectMake(0, 0, ViewWidth, 176);
     self.tableView.tableHeaderView = self.tableHeaderView;
-    self.tableFooterView.frame = CGRectMake(0, 0, ViewWidth, 220);
-    self.tableView.tableFooterView = self.tableFooterView;
+//    self.tableFooterView.frame = CGRectMake(0, 0, ViewWidth, 220);
+//    self.tableView.tableFooterView = self.tableFooterView;
 
     self.tableView.rowHeight = 90;
-    [self.tableView registerNib:[UINib nibWithNibName:@"CaiLiaoDanDetailCell" bundle:nil] forCellReuseIdentifier:@"CaiLiaoDanDetailCell"];
+//    [self.tableView registerNib:[UINib nibWithNibName:@"CaiLiaoDanDetailCell" bundle:nil] forCellReuseIdentifier:@"CaiLiaoDanDetailCell"];
+      [self.tableView registerNib:[UINib nibWithNibName:@"CailaodanEditCell" bundle:nil] forCellReuseIdentifier:@"CailaodanEditCell"];
 }
+- (void)initBottomView {
+    
+    self.bottomView.frame=CGRectMake(0, SCREEN_HEIGHT-SafeAreaBottomHeight-60, SCREEN_WIDTH, 60);
+    [self.view addSubview:self.bottomView];
+}
+- (void)setupRightItem{
+    UIButton* _rightButton = [[UIButton alloc] initWithFrame:CGRectMake(SCREEN_WIDTH - 70,100, 44*SCREEN_WIDTH/750, 44*SCREEN_WIDTH/750)];
+    [_rightButton setImage:[UIImage imageNamed:@"icon_share"]forState:UIControlStateNormal];
+    [_rightButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    _rightButton.titleLabel.font = [UIFont systemFontOfSize:12];
+    [_rightButton addTarget:self action:@selector(shareBtnClicked:) forControlEvents:UIControlEventTouchUpInside];
+    UIBarButtonItem* rightItem = [[UIBarButtonItem alloc]initWithCustomView:_rightButton];
+    self.navigationItem.rightBarButtonItem = rightItem;
+    
+}
+
+
 #pragma mark – Network
 
 - (void)getDataArrayFMDB {
@@ -163,21 +209,138 @@
     return view;
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    CaiLiaoDanDetailCell *cell = [tableView dequeueReusableCellWithIdentifier:@"CaiLiaoDanDetailCell"];
+//    CailaodanEditCell *cell = [tableView dequeueReusableCellWithIdentifier:@"CailaodanEditCell"];
+//    cell.contentView.backgroundColor = [UIColor whiteColor];
+//    CartOrdeInfoModel *model = self.sectionArry[indexPath.section];
+//    NSDictionary *dict = model.stuff_info[indexPath.row];
+//
+//    StuffInfoModel *stuModel = [StuffInfoModel mj_objectWithKeyValues:dict];
+//    cell.nameLabel.text = stuModel.stuff_name;
+////    cell.pinpaiBtn.text = stuModel.stuff_brand_name;
+//    [cell.pinpaiBtn setTitle:[NSString stringWithFormat:@"%@",stuModel.stuff_brand_name] forState:UIControlStateNormal];
+////    cell.guigeBtn.text = stuModel.stuff_spec;
+//    [cell.guigeBtn setTitle:[NSString stringWithFormat:@"%@",stuModel.stuff_spec] forState:UIControlStateNormal];
+//
+////    if (stuModel.unit.length == 0) {
+////        cell.numberLabel.text = [NSString stringWithFormat:@"%d", stuModel.number];
+////    } else {
+////        cell.numberLabel.text = [NSString stringWithFormat:@"%d (%@)", stuModel.number, stuModel.unit];
+////    }
+//
+//    return cell;
+    
+    CailaodanEditCell *cell = [tableView dequeueReusableCellWithIdentifier:@"CailaodanEditCell"];
     cell.contentView.backgroundColor = [UIColor whiteColor];
     CartOrdeInfoModel *model = self.sectionArry[indexPath.section];
-    NSDictionary *dict = model.stuff_info[indexPath.row];
-
-    StuffInfoModel *stuModel = [StuffInfoModel mj_objectWithKeyValues:dict];
-    cell.nameLabel.text = stuModel.stuff_name;
-    cell.brandNameLabel.text = stuModel.stuff_brand_name;
-    cell.guigeNameLabel.text = stuModel.stuff_spec;
-    if (stuModel.unit.length == 0) {
-        cell.numberLabel.text = [NSString stringWithFormat:@"%d", stuModel.number];
-    } else {
-        cell.numberLabel.text = [NSString stringWithFormat:@"%d (%@)", stuModel.number, stuModel.unit];
+     NSDictionary *dict = model.stuff_info[indexPath.row];
+     StuffInfoModel *stuModel = [StuffInfoModel mj_objectWithKeyValues:dict];
+    
+    NSMutableArray *cellArray = [NSMutableArray array];
+    [cellArray removeAllObjects];
+    for (NSDictionary *dict in model.stuff_info) {
+        StuffInfoModel *stuModel = [StuffInfoModel mj_objectWithKeyValues:dict];
+        [cellArray addObject:stuModel];
     }
-
+//
+//    StuffInfoModel *stuModel = cellArray[indexPath.row];
+    
+    cell.nameLabel.text = stuModel.stuff_name;
+    if ([stuModel.stuff_brand_name isKindOfClass:[NSNull class]]) {
+        [cell.pinpaiBtn setTitle:@"没有数据" forState:UIControlStateNormal];
+    } else {
+        [cell.pinpaiBtn setTitle:[NSString stringWithFormat:@" %@ ", stuModel.stuff_brand_name] forState:UIControlStateNormal];
+    }
+    
+    if (stuModel.selectsSpecDict.count == 0) {
+        if ([stuModel.stuff_spec_name isKindOfClass:[NSNull class]]) {
+            [cell.guigeBtn setTitle:@"没有数据" forState:UIControlStateNormal];
+        } else {
+            [cell.guigeBtn setTitle:[NSString stringWithFormat:@" %@ ", stuModel.stuff_spec] forState:UIControlStateNormal];
+        }
+    } else {
+        
+        [cell.guigeBtn setTitle:[NSString stringWithFormat:@" %@ ", stuModel.selectsSpecDict[@"name"]] forState:UIControlStateNormal];
+    }
+    
+    cell.numberBtn.currentNumber = stuModel.number;
+    
+    cell.moreBlock = ^{
+        [cellArray removeObjectAtIndex:indexPath.row];
+        if (cellArray.count == 0) {
+            [self.sectionArry removeObjectAtIndex:indexPath.section];
+        } else {
+            
+            CartOrdeInfoModel *model1 = self.sectionArry[indexPath.section];
+            model1.stuff_info = cellArray;
+            
+            [self.sectionArry replaceObjectAtIndex:indexPath.section withObject:model1];
+        }
+        
+        [self.deleteArray addObject:@(stuModel.stuff_data_id)];
+        [self.tableView reloadData];
+        
+    };
+    //品牌
+    __weak typeof(CailaodanEditCell *) weakself = cell;
+    cell.pinpaiBlock = ^{
+        
+        self.index = indexPath;
+        self.stuff_id = model.stuff_id;
+        [self.pinpaiArray removeAllObjects];
+        if (stuModel.brand_list.count == 0) {
+            
+        } else {
+            NSArray *array = stuModel.brand_list;
+            for (NSDictionary *dict in array) {
+                PinpaiModel *model = [PinpaiModel mj_objectWithKeyValues:dict];
+                [self.pinpaiArray addObject:model];
+            }
+        }
+//        [self alertPinpaiViewWithcellView:weakself];
+        
+    };
+    cell.guigeBlock = ^{
+        
+        self.editSpecView = nil;
+        
+        self.index = indexPath;
+        
+        self.stuModel = stuModel;
+        [self.guigeArray removeAllObjects];
+        
+        if (stuModel.spec_list.count == 0) {
+            
+        } else {
+            NSArray *guiTempArray = stuModel.spec_list;
+            
+            for (NSDictionary *guigeDict in guiTempArray) {
+                GuigeModel *guigeModel = [GuigeModel mj_objectWithKeyValues:guigeDict];
+                
+                [self.guigeArray addObject:guigeModel];
+            }
+        }
+        
+        self.editSpecView.frame = CGRectMake(0, 0, ViewWidth, ViewHeight);
+        self.editSpecView.dataArray = self.guigeArray;
+        [self.editSpecView.guigeView reloadData];
+        [[DZTools getAppWindow] addSubview:self.editSpecView];
+        
+    };
+    cell.numBlock = ^(CGFloat num) {
+        
+        //  数量的变化
+        weakself.numberBtn.currentNumber = num;
+        
+        stuModel.number = num;
+        
+        CartOrdeInfoModel *model1 = self.sectionArry[indexPath.section];
+        [cellArray replaceObjectAtIndex:indexPath.row withObject:stuModel];
+        
+        model1.stuff_info = cellArray;
+        
+        [self.sectionArry replaceObjectAtIndex:indexPath.section withObject:model1];
+        
+    };
     return cell;
 }
 
@@ -341,6 +504,52 @@ IsNeedHub:NO];
 
     
 }
+#pragma mark - 跳转新增材料
+- (IBAction)xinzengBtnClick:(id)sender {
+    
+    CaiLiaoFenLeiViewController *vc = [[CaiLiaoFenLeiViewController alloc] init];
+    vc.hidesBottomBarWhenPushed = YES;
+    CartOrdeInfoModel *cartModel = [CartOrdeInfoModel new];
+    vc.stuffCartId = self.stuff_cart_id;
+    vc.isFromEdit = YES;
+    StuffInfoModel *stuModel = [[StuffInfoModel alloc] init];
+    
+    vc.change = ^(NSArray *array) {
+        for (StuffListModel *model in array) {
+            NSDictionary *dict = model.selectBrandDict;
+            
+            if ([dict[@"name"] isKindOfClass:[NSNull class]]) {
+                stuModel.stuff_brand_name = @"没有数据";
+            } else {
+                stuModel.stuff_brand_name = dict[@"name"];
+            }
+            stuModel.stuff_brand_id = [dict[@"stuff_brand_id"] intValue];
+            //赋值
+            NSDictionary *speDict = model.selectsSpecDict;
+            
+            stuModel.stuff_spec_id = speDict[@"stuff_spec_id"];
+            stuModel.selectsSpecDict = model.selectsSpecDict;
+            if ([speDict[@"name"] isKindOfClass:[NSNull class]]) {
+                stuModel.stuff_spec_name = @"没有数据";
+            } else {
+                stuModel.stuff_spec_name = speDict[@"name"];
+            }
+            stuModel.stuff_id = (int) model.stuff_id;
+            stuModel.number = model.number;
+            stuModel.stuff_name = model.stuff_name;
+            stuModel.spec_list = model.spec;
+            stuModel.brand_list = model.brand;
+            NSDictionary *stuDict = [stuModel mj_keyValues];
+            cartModel.stuff_info = @[stuDict];
+            cartModel.stuff_category_name = @"新增";
+            //添加到数组中
+            [self.sectionArry addObject:cartModel];
+        }
+        [self.tableView reloadData];
+    };
+    
+    [self.navigationController pushViewController:vc animated:YES];
+}
 
 
 #pragma mark - 商城预估计价格
@@ -369,5 +578,55 @@ IsNeedHub:NO];
         IsNeedHub:NO];
 }
 
+- (EditSpecView *)editSpecView {
+    if (!_editSpecView) {
+        _editSpecView = [[EditSpecView alloc] initWithFrame:CGRectMake(0, 0, ViewWidth, ViewHeight)];
+        __weak typeof(CaiLiaoDanDetailViewController *) weakself = self;
+        
+        _editSpecView.sureBlock = ^(NSArray *_Nonnull array) {
+            
+            for (NSDictionary *dict in array) {
+                NSArray *array1 = dict[@"array"];
+                NSString *selectStr = @"";
+                NSMutableArray *idArray = [NSMutableArray array];
+                for (SpecGuigeModel *model in array1) {
+                    [idArray addObject:@(model.stuff_spec_id)];
+                }
+                selectStr = [idArray componentsJoinedByString:@","];
+                
+                weakself.stuModel.selectsSpecDict = @{
+                                                      @"stuff_spec_id": selectStr,
+                                                      @"number": dict[@"number"],
+                                                      @"name": dict[@"name"]
+                                                      };
+            }
+            
+            CartOrdeInfoModel *model1 = weakself.sectionArry[weakself.index.section];
+            NSMutableArray *cellArray = [NSMutableArray array];
+            [cellArray removeAllObjects];
+            for (NSDictionary *dict in model1.stuff_info) {
+                StuffInfoModel *stuModel = [StuffInfoModel mj_objectWithKeyValues:dict];
+                [cellArray addObject:stuModel];
+            }
+            
+            StuffInfoModel *stuModel = cellArray[weakself.index.row];
+            
+            stuModel.selectsSpecDict = weakself.stuModel.selectsSpecDict;
+            
+            [cellArray replaceObjectAtIndex:weakself.index.row withObject:stuModel];
+            model1.stuff_info = cellArray;
+            
+            [weakself.sectionArry replaceObjectAtIndex:weakself.index.section withObject:model1];
+            
+            [weakself.tableView reloadData];
+            
+        };
+        _editSpecView.deleteBlock = ^{
+            weakself.editSpecView = nil;
+        };
+    }
+    
+    return _editSpecView;
+}
 
 @end

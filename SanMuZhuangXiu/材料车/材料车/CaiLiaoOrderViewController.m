@@ -209,9 +209,9 @@
 
     CartListModel *model = self.dataArray[indexPath.row];
     if ([model.status isEqualToString:@"1"]) {
-        cell.stateLabel.text = @"(未采购)";
+        cell.stateLabel.text = @"未采购";
     } else if ([model.status isEqualToString:@"3"]) {
-        cell.stateLabel.text = @"(已采购)";
+        cell.stateLabel.text = @"已采购";
     }
     if (model.sharename != nil && model.sharename.length > 0) {
         cell.shareByLabel.text = [NSString stringWithFormat:@"%@", model.sharename];

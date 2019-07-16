@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SanMuZhuangXiu/&#x9996;&#x9875;/&#x6750;&#x6599;&#x9884;&#x7b97;/&#x6750;&#x6599;&#x5206;&#x7c7b;/CaiLiaoFenLeiViewController.m"
-            timestampString = "584936151.419452"
+            timestampString = "584963927.78986"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1464"
-            endingLineNumber = "1464"
+            startingLineNumber = "1465"
+            endingLineNumber = "1465"
             landmarkName = "-selectSpecView"
             landmarkType = "7">
          </BreakpointContent>
@@ -74,11 +74,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SanMuZhuangXiu/&#x9996;&#x9875;/&#x6750;&#x6599;&#x9884;&#x7b97;/&#x6750;&#x6599;&#x5206;&#x7c7b;/CaiLiaoFenLeiViewController.m"
-            timestampString = "584936151.419598"
+            timestampString = "584963927.790054"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "460"
-            endingLineNumber = "460"
+            startingLineNumber = "461"
+            endingLineNumber = "461"
             landmarkName = "-tableView:cellForRowAtIndexPath:"
             landmarkType = "7">
          </BreakpointContent>
@@ -202,11 +202,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SanMuZhuangXiu/&#x9996;&#x9875;/&#x6750;&#x6599;&#x9884;&#x7b97;/&#x6750;&#x6599;&#x5206;&#x7c7b;/CaiLiaoFenLeiViewController.m"
-            timestampString = "584936151.4199311"
+            timestampString = "584963927.790267"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1138"
-            endingLineNumber = "1138"
+            startingLineNumber = "1139"
+            endingLineNumber = "1139"
             landmarkName = "-shengCailiaoBtnClick:"
             landmarkType = "7">
          </BreakpointContent>
@@ -240,6 +240,86 @@
             startingLineNumber = "472"
             endingLineNumber = "472"
             landmarkName = "-returnNextFunction"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SanMuZhuangXiu/&#x6750;&#x6599;&#x8f66;/&#x6750;&#x6599;&#x5355;&#x8be6;&#x60c5;/CaiLiaoDanDetailViewController.m"
+            timestampString = "584963927.790357"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "232"
+            endingLineNumber = "232"
+            landmarkName = "-tableView:cellForRowAtIndexPath:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SanMuZhuangXiu/&#x6750;&#x6599;&#x8f66;/&#x6750;&#x6599;&#x5355;&#x8be6;&#x60c5;/CaiLiaoDanDetailViewController.m"
+            timestampString = "584963927.7908781"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "248"
+            endingLineNumber = "248"
+            landmarkName = "-tableView:cellForRowAtIndexPath:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SanMuZhuangXiu/&#x6750;&#x6599;&#x8f66;/&#x6750;&#x6599;&#x5355;&#x8be6;&#x60c5;/CaiLiaoDanDetailViewController.m"
+            timestampString = "584963927.7911921"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "254"
+            endingLineNumber = "254"
+            landmarkName = "-tableView:cellForRowAtIndexPath:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SanMuZhuangXiu/&#x6750;&#x6599;&#x8f66;/&#x6750;&#x6599;&#x5355;&#x8be6;&#x60c5;/CaiLiaoDanDetailViewController.m"
+            timestampString = "584963927.791431"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "258"
+            endingLineNumber = "258"
+            landmarkName = "-tableView:cellForRowAtIndexPath:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SanMuZhuangXiu/&#x6750;&#x6599;&#x8f66;/&#x6750;&#x6599;&#x5355;&#x8be6;&#x60c5;/CaiLiaoDanDetailViewController.m"
+            timestampString = "584963927.791682"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "144"
+            endingLineNumber = "144"
+            landmarkName = "-getDataArrayFMDB"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

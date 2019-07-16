@@ -128,8 +128,8 @@
                         <outlet property="delegate" destination="-1" id="MYI-ux-zbI"/>
                     </connections>
                 </tableView>
-                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FKC-fo-X24">
-                    <rect key="frame" x="222" y="624" width="66" height="30"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FKC-fo-X24">
+                    <rect key="frame" x="202" y="624" width="66" height="30"/>
                     <color key="backgroundColor" red="0.1803921568627451" green="0.5490196078431373" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="30" id="pdR-Cg-ezO"/>
@@ -141,22 +141,35 @@
                     </state>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                            <real key="value" value="16"/>
+                            <real key="value" value="14"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                     <connections>
                         <action selector="hebingBtnClicked:" destination="-1" eventType="touchUpInside" id="Dz0-Ti-YtD"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uEF-kJ-uEK">
-                    <rect key="frame" x="329" y="624" width="66" height="30"/>
-                    <color key="backgroundColor" red="0.18039215689999999" green="0.54901960780000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uEF-kJ-uEK">
+                    <rect key="frame" x="293" y="624" width="66" height="30"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="30" id="B1b-8D-DLb"/>
+                        <constraint firstAttribute="width" constant="66" id="B1b-8D-DLb"/>
                         <constraint firstAttribute="height" constant="30" id="EgR-ej-dLt"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                    <state key="normal" title="删除"/>
+                    <state key="normal" title="删除">
+                        <color key="titleColor" red="0.1803921568627451" green="0.5490196078431373" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="14"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.1803921568627451" green="0.5490196078431373" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
                     <connections>
                         <action selector="deleteBtnClicked:" destination="-1" eventType="touchUpInside" id="B6V-cZ-fQQ"/>
                     </connections>
@@ -182,7 +195,7 @@
                 <constraint firstItem="KQ6-SG-rrg" firstAttribute="top" secondItem="QrD-K9-P3p" secondAttribute="bottom" constant="9.5" id="gfI-dx-gh7"/>
                 <constraint firstItem="KEB-LJ-QAL" firstAttribute="top" secondItem="LUR-7q-aN1" secondAttribute="bottom" constant="550" id="hnq-HN-Gu5"/>
                 <constraint firstItem="uEF-kJ-uEK" firstAttribute="centerY" secondItem="KEB-LJ-QAL" secondAttribute="centerY" id="lak-gR-2Na"/>
-                <constraint firstItem="uEF-kJ-uEK" firstAttribute="leading" secondItem="FKC-fo-X24" secondAttribute="trailing" constant="20" id="med-zu-Hwd"/>
+                <constraint firstItem="uEF-kJ-uEK" firstAttribute="leading" secondItem="FKC-fo-X24" secondAttribute="trailing" constant="25" id="med-zu-Hwd"/>
                 <constraint firstItem="2dy-6Y-SeX" firstAttribute="leading" secondItem="rHr-Yk-Pgd" secondAttribute="trailing" constant="5" id="q48-9j-eKp"/>
                 <constraint firstItem="Ika-mT-bUr" firstAttribute="leading" secondItem="2dy-6Y-SeX" secondAttribute="trailing" constant="5" id="rfe-ox-yP7"/>
                 <constraint firstItem="KQ6-SG-rrg" firstAttribute="trailing" secondItem="Q5M-cg-NOt" secondAttribute="trailing" id="sZc-Jk-7dj"/>

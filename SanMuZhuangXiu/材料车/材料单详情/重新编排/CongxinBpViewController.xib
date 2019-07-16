@@ -97,32 +97,32 @@
                         <constraint firstItem="Q8T-i0-JEb" firstAttribute="leading" secondItem="7E3-dY-ILH" secondAttribute="leading" constant="8" id="MID-nf-0T9"/>
                     </constraints>
                 </view>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1LV-4D-hmk">
-                    <rect key="frame" x="318" y="34.5" width="40" height="14"/>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="材料单详情" placeholder="请修改材料单名称" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="OZf-os-HlO">
+                    <rect key="frame" x="17" y="24" width="167.5" height="30"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="40" id="3pu-iW-bek"/>
-                        <constraint firstAttribute="height" constant="14" id="X3b-GJ-tMw"/>
+                        <constraint firstAttribute="height" constant="30" id="7UX-YH-LGK"/>
                     </constraints>
-                    <state key="normal" image="icon_bianji">
+                    <viewLayoutGuide key="safeArea" id="vt8-f3-yMG"/>
+                    <color key="textColor" red="0.14901960784313725" green="0.16078431372549018" blue="0.17254901960784313" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                    <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="P6Z-LM-qKO"/>
+                    </connections>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1LV-4D-hmk">
+                    <rect key="frame" x="131" y="33" width="25" height="18"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="18" id="GWn-tt-gro"/>
+                        <constraint firstAttribute="width" constant="25" id="rk4-66-V74"/>
+                    </constraints>
+                    <state key="normal" image="icon_bianjii">
                         <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
                     <connections>
                         <action selector="EditBtnClick:" destination="-1" eventType="touchUpInside" id="dhl-M9-CZO"/>
                     </connections>
                 </button>
-                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="材料单详情" placeholder="请修改材料单名称" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="OZf-os-HlO">
-                    <rect key="frame" x="57" y="24" width="261" height="30"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="30" id="7UX-YH-LGK"/>
-                    </constraints>
-                    <viewLayoutGuide key="safeArea" id="vt8-f3-yMG"/>
-                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
-                    <connections>
-                        <outlet property="delegate" destination="-1" id="P6Z-LM-qKO"/>
-                    </connections>
-                </textField>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
@@ -131,18 +131,17 @@
                 <constraint firstItem="UAw-He-6Zr" firstAttribute="leading" secondItem="fWX-HP-oGk" secondAttribute="leading" constant="16" id="JSQ-aG-1sz"/>
                 <constraint firstItem="9JL-S1-BaW" firstAttribute="trailing" secondItem="vi2-Er-K36" secondAttribute="trailing" constant="16" id="JWT-30-F6o"/>
                 <constraint firstAttribute="bottom" secondItem="TKj-tr-IGV" secondAttribute="bottom" id="JeN-ka-aBc"/>
-                <constraint firstItem="TKj-tr-IGV" firstAttribute="leading" secondItem="1LV-4D-hmk" secondAttribute="trailing" id="MEI-zH-ZHM"/>
                 <constraint firstItem="vi2-Er-K36" firstAttribute="top" secondItem="9JL-S1-BaW" secondAttribute="top" constant="15" id="PNJ-j7-8eG"/>
                 <constraint firstItem="9JL-S1-BaW" firstAttribute="bottom" secondItem="UAw-He-6Zr" secondAttribute="bottom" id="S1R-kv-kzP"/>
                 <constraint firstItem="TKj-tr-IGV" firstAttribute="leading" secondItem="7E3-dY-ILH" secondAttribute="trailing" id="TMy-24-v49"/>
-                <constraint firstItem="1LV-4D-hmk" firstAttribute="top" secondItem="vi2-Er-K36" secondAttribute="bottom" constant="18.5" id="U2t-KH-BYz"/>
                 <constraint firstItem="OZf-os-HlO" firstAttribute="top" secondItem="vi2-Er-K36" secondAttribute="bottom" constant="8" id="WYJ-BM-lOH"/>
                 <constraint firstItem="UAw-He-6Zr" firstAttribute="top" secondItem="vi2-Er-K36" secondAttribute="bottom" id="Wft-a0-bB8"/>
+                <constraint firstItem="1LV-4D-hmk" firstAttribute="top" secondItem="vi2-Er-K36" secondAttribute="bottom" constant="17" id="aiu-zw-LhL"/>
+                <constraint firstItem="1LV-4D-hmk" firstAttribute="leading" secondItem="OZf-os-HlO" secondAttribute="trailing" constant="-53.5" id="j4y-Ir-Fhz"/>
                 <constraint firstItem="TKj-tr-IGV" firstAttribute="top" secondItem="vi2-Er-K36" secondAttribute="bottom" id="kPN-ee-B8B"/>
                 <constraint firstItem="9JL-S1-BaW" firstAttribute="trailing" secondItem="TKj-tr-IGV" secondAttribute="trailing" constant="16" id="lKD-4z-ta0"/>
-                <constraint firstItem="OZf-os-HlO" firstAttribute="leading" secondItem="UAw-He-6Zr" secondAttribute="trailing" constant="40" id="sxp-g5-0RA"/>
+                <constraint firstItem="OZf-os-HlO" firstAttribute="leading" secondItem="UAw-He-6Zr" secondAttribute="trailing" id="sxp-g5-0RA"/>
                 <constraint firstItem="vi2-Er-K36" firstAttribute="leading" secondItem="9JL-S1-BaW" secondAttribute="leading" constant="16" id="w49-n3-5Od"/>
-                <constraint firstItem="1LV-4D-hmk" firstAttribute="leading" secondItem="OZf-os-HlO" secondAttribute="trailing" id="xoA-Sq-oSp"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="9JL-S1-BaW"/>
@@ -243,6 +242,6 @@
         </view>
     </objects>
     <resources>
-        <image name="icon_bianji" width="17" height="17"/>
+        <image name="icon_bianjii" width="15" height="15"/>
     </resources>
 </document>

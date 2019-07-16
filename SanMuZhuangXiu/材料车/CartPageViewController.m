@@ -63,7 +63,7 @@
     //导航条 布局
     _control = [[UISegmentedControl alloc]initWithItems:self.nameArray];
     _control.selectedSegmentIndex = 0;
-    _control.tintColor = TabbarColor;
+    _control.tintColor =[MTool colorWithHexString:@"#2e8cff"];
     _selectControlIndex = _control.selectedSegmentIndex;
     [_control addTarget:self action:@selector(changeSegment:) forControlEvents:UIControlEventValueChanged];
     //添加角标

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -47,16 +47,16 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="石膏板" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZXd-IF-X1j">
-                    <rect key="frame" x="37" y="15" width="43" height="17"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <rect key="frame" x="26" y="14" width="49" height="19.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" red="0.49803921568627452" green="0.50196078431372548" blue="0.50980392156862742" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="wJ5-Xw-m7o" firstAttribute="leading" secondItem="ksg-y0-tLW" secondAttribute="leading" constant="16" id="1LH-7f-W03"/>
-                <constraint firstItem="ZXd-IF-X1j" firstAttribute="leading" secondItem="wJ5-Xw-m7o" secondAttribute="trailing" constant="20" id="5Vw-6s-8Zs"/>
+                <constraint firstItem="ZXd-IF-X1j" firstAttribute="leading" secondItem="ksg-y0-tLW" secondAttribute="leading" constant="26" id="3qT-hX-dvw"/>
                 <constraint firstItem="ZXd-IF-X1j" firstAttribute="centerY" secondItem="mQ8-Jr-Lgw" secondAttribute="centerY" id="6qN-CS-1ps"/>
                 <constraint firstAttribute="bottom" secondItem="AG8-Iw-fLM" secondAttribute="bottom" id="P60-WG-6cq"/>
                 <constraint firstAttribute="trailing" secondItem="Djt-fn-QLc" secondAttribute="trailing" constant="16" id="PMT-Ip-TtI"/>
